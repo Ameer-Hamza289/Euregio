@@ -11,6 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
+        .px-375 {
+            padding-inline: 375px;
+        }
+
         .search-bar {
             display: flex;
             align-items: center;
@@ -141,7 +145,7 @@
         }
 
         .members-section {
-            padding: 40px 375px;
+            padding: 40px 375p
 
             background-color: #fff;
             text-align: center;
@@ -261,6 +265,30 @@
         .carousel-indicators {
             bottom: 200px;
         }
+
+        @media screen and (max-width: 768px) {
+            .px-375 {
+                padding-inline: 20px;
+            }
+
+            .carousel-caption h1 {
+                font-size: 2rem;
+            }
+
+            .carousel-caption .btn {
+                width: 150px;
+                height: 48px;
+            }
+
+            .carousel-indicators {
+                bottom: 20px;
+            }
+
+            .members-section {
+                padding: 40px 20px;
+            }
+
+        }
     </style>
 </head>
 
@@ -268,25 +296,38 @@
     </head>
 
     <body>
-        <div style="background-color: #F5F5F5; padding-inline: 375px;"
-            class="py-3 d-flex justify-content-between align-items-center">
+        <div style="background-color: #F5F5F5;" class="py-3 d-flex justify-content-between align-items-center px-375">
             <span>
                 <span class="text-decoration-underline fw-semibold"
                     style="color: #004684; line-height: 21.79px;">A</span>
                 <span class="fw-semibold " style="color: #004684;font-size: 20px;line-height: 27.24px;">A</span>
                 <span class="fw-semibold " style="color: #004684;font-size: 24px;line-height: 32.68px;">A</span>
             </span>
-            <div class="d-flex gap-5">
+            <div class="d-flex gap-md-5 gap-2">
                 <span class="fw-semibold" style="color: #6F6F6F;line-height: 21.79px;">Language :</span>
                 <img src="./assets/image 1.svg" alt="flag-1" style="height: 23px; width: 23px;">
                 <img src="./assets/image 2.svg" alt="flag-2" style="height: 23px; width: 23px;">
                 <img src="./assets/image 3.svg" alt="flag-3" style="height: 23px; width: 23px;">
             </div>
         </div>
-        <div class="py-2 d-flex justify-content-between align-items-center" style="padding-inline: 375px;">
+        <div class="py-2 d-flex justify-content-between align-items-center px-375">
             <img src="./assets/logo.svg" alt="logo">
             <div class="d-flex align-items-center">
-                <div class="d-flex gap-2">
+                <div class="d-md-flex d-none gap-2">
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                        <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                        <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    </span>
+                </div>
+                <div class="d-md-none d-flex gap-2">
                     <span class="d-flex justify-content-center align-items-center"
                         style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
                         <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
@@ -301,7 +342,7 @@
                     </span>
                 </div>
                 <div class="container">
-                    <div class="search-bar">
+                    <div class="search-bar d-md-flex d-none">
                         <input type="text" placeholder="Search" aria-label="Search"
                             style="::placeholder { color: #6F6F6F;font-weight: 500; }">
                         <button class="search-button">
@@ -313,7 +354,7 @@
         </div>
 
         <!-- navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-custom" style="padding-block: 0px;padding-inline: 375px;">
+        <nav class="navbar navbar-expand-lg navbar-custom px-375" style="padding-block: 0px;">
             <div class="container px-0">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -422,54 +463,59 @@
         </div>
 
         <!-- cards  -->
-        <div class="" style="padding-inline: 375px; transform: translateY(-180px);">
+        <div class="px-375" style="transform: translateY(-180px);">
             <div class="d-flex justify-content-end">
                 <img src="./assets/lees_voor.svg" alt="lees_voor" style="cursor: pointer;">
             </div>
-            <div class="container mt-4"></div>
-            <div class="row" style="gap:50px;">
-                <div class="custom-card">
-                    <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
-                    <hr>
-                    <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="arrow text-end">&rarr;</a>
+            <div class="container mt-4">
+                <div class="row flex-wrap" style="gap:30px;">
+                    <div class="custom-card">
+                        <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
+                        <hr>
+                        <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="arrow text-end">&rarr;</a>
+                        </div>
+                        <div class="white-bar"></div>
                     </div>
-                    <div class="white-bar"></div>
-                </div>
 
-                <div class="custom-card">
-                    <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
-                    <hr>
-                    <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="arrow text-end">&rarr;</a>
+                    <div class="custom-card">
+                        <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
+                        <hr>
+                        <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="arrow text-end">&rarr;</a>
+                        </div>
+                        <div class="white-bar"></div>
                     </div>
-                    <div class="white-bar"></div>
-                </div>
 
-                <div class="custom-card">
-                    <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
-                    <hr>
-                    <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="arrow text-end">&rarr;</a>
+                    <div class="custom-card">
+                        <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
+                        <hr>
+                        <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="arrow text-end">&rarr;</a>
+                        </div>
+                        <div class="white-bar"></div>
                     </div>
-                    <div class="white-bar"></div>
-                </div>
 
-                <div class="custom-card">
-                    <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
-                    <hr>
-                    <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="arrow text-end">&rarr;</a>
+                    <div class="custom-card">
+                        <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
+                        <hr>
+                        <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="arrow text-end">&rarr;</a>
+                        </div>
+                        <div class="white-bar"></div>
                     </div>
-                    <div class="white-bar"></div>
                 </div>
             </div>
         </div>
@@ -477,7 +523,7 @@
 
 
         <!-- news & events  -->
-        <div class="d-flex" style="background-color: #002749;padding-inline: 375px;padding-block: 79px;gap: 66px;">
+        <div class="d-flex px-375" style="background-color: #002749;padding-block: 79px;gap: 66px;">
             <!-- news  -->
             <div class="">
                 <p class="fw-bold text-white" style="font-size: 55px;line-height: 54px; margin-bottom: 60px;">Nieuws</p>
@@ -664,7 +710,7 @@
         </div>
 
         <!-- contact banner  -->
-        <div style="padding-inline: 375px;padding-top: 72px;padding-bottom: 168px; background-color: #002749;">
+        <div class="px-375" style="padding-top: 72px;padding-bottom: 168px; background-color: #002749;">
             <div class="d-flex justify-content-end">
                 <img src="./assets/lees_voor.svg" alt="lees_voor">
             </div>
