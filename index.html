@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         .search-bar {
             display: flex;
@@ -74,65 +74,132 @@
         }
 
         .custom-card {
-      background-color: #004085; /* Dark blue background */
-      color: white;
-      padding: 20px;
-      padding-top: 30px;
-      padding-bottom: 15px;
-      /* border-radius: 10px; */
-      position: relative;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 282px;
-    }
+            background-color: #004085;
+            /* Dark blue background */
+            color: white;
+            padding: 20px;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            /* border-radius: 10px; */
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 282px;
+        }
 
-    .custom-card h5 {
-      text-transform: uppercase;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+        .custom-card h5 {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-    .custom-card hr {
-      border: 0;
-      border-top: 2px solid white;
-      /* border-bottom: 2px solid white; */
-      width: 70px;
-      margin: 0;
-      margin-bottom: 15px;
-    }
+        .custom-card hr {
+            border: 0;
+            border-top: 2px solid white;
+            /* border-bottom: 2px solid white; */
+            width: 70px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
 
-    .custom-card p {
-      margin-bottom: 20px;
-      font-size: 14px;
-      
-    }
+        .custom-card p {
+            margin-bottom: 20px;
+            font-size: 14px;
 
-    .custom-card .arrow {
-      position: absolute;
-      bottom: 10px;
-      right: 20px;
-      font-size: 18px;
-      color: white;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-    }
+        }
 
-    .custom-card .arrow:hover {
-      color: #e6f3ff; /* Lighter blue on hover */
-    }
+        .custom-card .arrow {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
 
-    .white-bar{
-        height: 97px;
-        width: 12px;
-        background-color: white;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 20px;
-    }
+        .custom-card .arrow:hover {
+            color: #e6f3ff;
+            /* Lighter blue on hover */
+        }
 
+        .white-bar {
+            height: 97px;
+            width: 12px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 20px;
+        }
 
+        .members-section {
+            padding: 40px 375px;
 
+            background-color: #fff;
+            text-align: center;
+
+        }
+
+        .members-section h3 {
+            font-size: .80rem;
+            color: #6F6F6F;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .read-aloud {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .read-aloud button {
+            border: none;
+            background-color: transparent;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #6c757d;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .logo-wrapper .logo {
+            border: 1px solid #CFCFCF;
+            border-radius: 5px;
+            padding: 10px;
+            width: 120px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .view-members-btn {
+            background-color: #004684;
+            color: white;
+            border: none;
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: .75rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+        }
+
+        .view-members-btn:hover {
+            background-color: #003366;
+        }
     </style>
 </head>
 
@@ -255,20 +322,323 @@
             </div>
         </nav>
 
+        <!-- cards  -->
         <div class="container mt-5" style="padding-inline: 375px;">
             <div class="row">
                 <div class="custom-card">
-                  <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
-                  <hr>
-                  <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <a href="#" class="arrow">&rarr;</a>
-                  <div class="white-bar">
+                    <p class="fw-semibold mb-3" style="font-size: 18px;text-transform: uppercase;">Voor Leden</p>
+                    <hr>
+                    <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <a href="#" class="arrow">&rarr;</a>
+                    <div class="white-bar">
 
-                  </div>
+                    </div>
                 </div>
 
             </div>
-          </div>
+        </div>
+
+        <!-- news & events  -->
+        <div class="d-flex" style="background-color: #002749;padding-inline: 375px;padding-block: 79px;gap: 66px;">
+            <!-- news  -->
+            <div class="">
+                <p class="fw-bold text-white" style="font-size: 55px;line-height: 54px; margin-bottom: 60px;">Nieuws</p>
+
+                <div class="d-flex flex-column" style="gap: 40px;">
+                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
+                        <div>
+                            <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                        </div>
+                        <div class="bg-white p-4">
+                            <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">EMOJI Bicycle &
+                                Handbike 3-day event</p>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful multi-day tour by
+                                bike or handbike!</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                <a href="#" style="line-height: 28px;color: #004684;"
+                                    class="text-decoration-none fw-semibold">Lees meer</a>
+                                <a href="#" class="text-decoration-none" style="font-size: 18px;">&rarr;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
+                        <div>
+                            <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                        </div>
+                        <div class="bg-white p-4">
+                            <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">EMOJI Bicycle &
+                                Handbike 3-day event</p>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful multi-day tour by
+                                bike or handbike!</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                <a href="#" style="line-height: 28px;color: #004684;"
+                                    class="text-decoration-none fw-semibold">Lees meer</a>
+                                <a href="#" class="text-decoration-none" style="font-size: 18px;">&rarr;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center" style="margin-top: 55px;">
+                    <div class="d-flex gap-3">
+                        <div class="d-flex justify-content-center align-items-center"
+                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
+                            <i class="bi bi-arrow-left text-white" style="font-size: 30px;"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center"
+                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
+                            <i class="bi bi-arrow-right text-white" style="font-size: 30px;"></i>
+                        </div>
+                    </div>
+                    <p class="fw-semibold text-white">Bekijk alle artikelen</p>
+                </div>
+            </div>
+
+            <!-- events  -->
+            <div class="">
+                <div class="d-flex align-items-center justify-content-between" style=" margin-bottom: 60px;">
+                    <p class="fw-bold text-white mb-0" style="font-size: 55px;line-height: 54px;">Events</p>
+                    <img src="./assets/lees_voor.svg" alt="lees-voor" style="cursor: pointer;">
+                </div>
+
+                <div class="d-flex flex-column" style="gap: 40px;">
+                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
+                        <div>
+                            <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                        </div>
+                        <div class="bg-white p-4">
+                            <span class="" style="margin-bottom: 14px;">
+                                <i class="bi bi-calendar"></i>
+                                <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
+                            </span>
+                            <p class="fw-bold mt-1" style="font-size: 18px;line-height: 28px;color: #004684;">
+                                Consultation hours for cross-border commuters</p>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29 October
+                                2024...</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                <a href="#" style="line-height: 28px;color: #004684;"
+                                    class="text-decoration-none fw-semibold">Lees meer</a>
+                                <a href="#" class="text-decoration-none" style="font-size: 18px;">&rarr;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
+                        <div>
+                            <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                        </div>
+                        <div class="bg-white p-4">
+                            <span class="" style="margin-bottom: 14px;">
+                                <i class="bi bi-calendar"></i>
+                                <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
+                            </span>
+                            <p class="fw-bold mt-1" style="font-size: 18px;line-height: 28px;color: #004684;">
+                                Consultation hours for cross-border commuters</p>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29 October
+                                2024...</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                <a href="#" style="line-height: 28px;color: #004684;"
+                                    class="text-decoration-none fw-semibold">Lees meer</a>
+                                <a href="#" class="text-decoration-none" style="font-size: 18px;">&rarr;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center" style="margin-top: 55px;">
+                    <div class="d-flex gap-3">
+                        <div class="d-flex justify-content-center align-items-center"
+                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
+                            <i class="bi bi-arrow-left text-white" style="font-size: 30px;"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center"
+                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
+                            <i class="bi bi-arrow-right text-white" style="font-size: 30px;"></i>
+                        </div>
+                    </div>
+                    <p class="fw-semibold text-white">Bekijk alle artikelen</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- GreenZInfo  -->
+
+        <div class="bg-white" style="padding: 28px 375px 152px;">
+            <div class="d-flex justify-content-end">
+                <img src="./assets/lees_voor.svg" alt="lees_voor" class="ms-auto">
+            </div>
+            <div class="text-center">
+                <img src="./assets/GreenZInfo.svg" alt="grrenzInfo" class="w-75" style="margin-block: 40px;">
+                <p class="fw-semibold" style="line-height: 28px;color: #6F6F6F;">
+                    As consumers, cross-border commuters or information seekers, the inhabitants of the Euregio
+                    Rhine-Waal are increasingly confronted with questions and problems, the origins of which can often
+                    be traced back to differences in European legislation or differences in national legislation. The
+                    Euregio Rhine-Waal therefore works together with the Office for German Affairs of the SVB, Deutsche
+                    Rentenversicherung, UWV, Agentur für Arbeit, the Tax and Customs Administration, the Finanzamt and
+                    trade unions in the GrensInfoPunt Euregio Rhine-Waal .
+                </p>
+            </div>
+
+            <div class="d-flex flex-column" style="margin-top: 50px; gap:80px">
+
+                <div class="d-flex gap-5 align-items-center">
+                    <div class="pe-2" style="color: #6F6F6F;">
+                        <span class="fw-bold d-block mb-2"
+                            style="font-size: 35px;line-height: 45px;color:#004684;">Subsidie
+                            advies</span>
+                        <p class="fw-medium" style="line-height: 28px; margin-block: 30px;">
+                            Interested parties can contact the office of the Euregio Rhine-Waal for advice on the
+                            subsidisation of projects within the framework of INTERREG Germany-Netherlands and of
+                            cross-border activities in the field of society, sport and culture .
+                        </p>
+                        <p class="fw-medium" style="line-height: 28px;">
+                            Qualified employees inform potential applicants about the subsidy possibilities in the
+                            Euregio Rhine-Waal, the subsidy programmes and the contact persons for these programmes, as
+                            well as about the subsidy priorities and current project initiatives. 
+                        </p>
+                        <button class="text-white fw-semibold mt-5"
+                            style="background-color: #004684;padding-block: 18px;padding-inline: 50px;border-radius: 35px;">MEER
+                            LEZEN</button>
+
+                    </div>
+                    <img src="./assets/first.svg" alt="first-image">
+                </div>
+
+                <div class="d-flex gap-5 align-items-center">
+                    <img src="./assets/second.svg" alt="first-image">
+                    <div class="ps-5" style="color: #6F6F6F;">
+                        <span class="fw-bold d-block mb-2"
+                            style="font-size: 35px;line-height: 45px;color:#004684;">Belangenbeharteging</span>
+                        <p class="fw-medium" style="line-height: 28px; margin-block: 30px;">
+                            The Euregio Rhine-Waal is seen as an advocate for the entire border region. We advocate for
+                            the interests of the border region with Dutch, German and European institutions and bodies,
+                            in order to sustainably improve the cross-border accessibility of the existing supply. The
+                            advocacy takes place in all socially relevant areas, from economy and infrastructure to
+                            education and culture.
+                        </p>
+
+                        <button class="text-white fw-semibold mt-5"
+                            style="background-color: #004684;padding-block: 18px;padding-inline: 50px;border-radius: 35px;">MEER
+                            LEZEN</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- contact banner  -->
+        <div style="padding-inline: 375px;padding-top: 72px;padding-bottom: 168px; background-color: #002749;">
+            <div class="d-flex justify-content-end">
+                <img src="./assets/lees_voor.svg" alt="lees_voor">
+            </div>
+            <p class="fw-bold text-white"
+                style="line-height: 94px;font-size: 69px; margin-top: 46px; margin-bottom: 59px;">Embark on an
+                exhilarating journey with endless possibilities. Let's dive into your project!</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="text-white font-medium" style="line-height: 28px;">We support many and diverse cross-border
+                    activities in the German-Dutch border area.</p>
+                <button class="fw-semibold bg-white text-uppercase"
+                    style="line-height: 22px;color:#004684;border-radius: 30px;padding: 18px 30px;">NEEM contact
+                    op</button>
+            </div>
+        </div>
+
+        <!-- companies  -->
+        <div class="members-section mt-5">
+            <div class="d-flex justify-content-center align-items-center mb-3" style="position: relative;">
+                <h3 class="me-2 fw-bold" style="font-size: 18px;line-height: 25px;">Mede mogelijk gemaakt door onze
+                    leden</h3>
+                <img src="./assets/lees_voor.svg" alt="Volume Icon"
+                    style="width: 10rem; position: absolute; top: -15px; right: 0;">
+            </div>
+
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <img src="./assets/image7.png" alt="Logo 1" class="img-fluid">
+                </div>
+                <div class="logo">
+                    <img src="./assets/image8.png" alt="Logo 2" class="img-fluid">
+                </div>
+                <div class="logo">
+                    <img src="./assets/image9.png" alt="Logo 3" class="img-fluid">
+                </div>
+                <div class="logo">
+                    <img src="./assets/image10.png" alt="Logo 4" class="img-fluid" style="height: 4rem;">
+                </div>
+                <div class="logo">
+                    <img src="./assets/image11.png" alt="Logo 5" class="img-fluid">
+                </div>
+                <div class="logo">
+                    <img src="./assets/image12.png" alt="Logo 6" class="img-fluid">
+                </div>
+                <div class="logo">
+                    <img src="./assets/image13.png" alt="Logo 7" class="img-fluid">
+                </div>
+            </div>
+
+            <button class="view-members-btn">Bekijk Alle Leden</button>
+        </div>
+
+        <!-- foot section  -->
+        <div class="" style="padding: 61px 375px 91px;background-color: #002749;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column">
+                    <p class="text-white fs-medium mb-5" style="font-size: 18px;line-height: 28px;">ADDRESS</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Euregio Rhine-Waal</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Emmericher Straße 24</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">47533 Kleve</p>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="text-white fs-medium mb-5" style="font-size: 18px;line-height: 28px;">CONTACT</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Tel: +49 (0) 2821 7930 0</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Fax: +49 (0) 2821 7930 30</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">E-mail: info(at)euregio.org</p>
+                    <div class="d-flex gap-2">
+                        <span class="d-flex justify-content-center align-items-center" style="background-color:#3B5998 ;height: 32px; width: 32px;cursor:pointer;">
+                            <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                        </span>
+                        <span class="d-flex justify-content-center align-items-center" style="background-color:#515BD4 ;height: 32px; width: 32px;cursor:pointer;">
+                            <img src="./assets/insta.svg" alt="instagram-icon" style="height: 14px; width: 14px;">
+                        </span>
+                        <span class="d-flex justify-content-center align-items-center" style="background-color:#007BB6 ;height: 32px; width: 32px;cursor:pointer;">
+                            <img src="./assets/linkedIn.svg" alt="linkedin-icon" style="height: 14px; width: 14px;">
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="mb-5"></span>
+                    <p class="fw-medium mt-2" style="color: #C2C2C2;">Colophon</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Disclaimer</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Data protection</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright  -->
+        <div class="d-flex justify-content-center align-items-center"
+            style="background-color: #004684;padding-block: 16px;">
+            <span class="text-white" style="font-size: 14px;line-height: 24px;">Copyright © 2024 Euregio - All rights
+                reserved.</span>
+        </div>
 
 
 
