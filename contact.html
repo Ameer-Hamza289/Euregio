@@ -9,239 +9,125 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <style>
-        .search-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid #ccc;
-            border-radius: 50px;
-            padding: 5px 10px;
-            background-color: #f9f9f9;
-        }
-
-        .search-bar input {
-            border: none;
-            outline: none;
-            flex-grow: 1;
-            background: transparent;
-            padding-left: 10px;
-        }
-
-        .search-bar .search-button {
-            background-color: #004085;
-            border: none;
-            color: white;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-
-        .navbar-custom {
-            background-color: #e6f3ff;
-            /* Light blue background */
-        }
-
-        .navbar-custom .nav-link {
-            color: #000;
-            /* Black text color */
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        .navbar-custom .dropdown-menu {
-            background-color: #e6f3ff;
-            /* Match navbar background */
-        }
-
-        .navbar-custom .btn-contact {
-            background-color: #004085;
-            /* Dark blue button */
-            color: white;
-            font-weight: 500;
-            border-radius: 0;
-        }
-
-        .navbar-custom .btn-contact:hover {
-            background-color: #002a5e;
-            /* Darker blue on hover */
-        }
-
-        .custom-card {
-            background-color: #004085;
-            /* Dark blue background */
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            position: relative;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .custom-card h5 {
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .custom-card hr {
-            border: 0;
-            border-top: 2px solid white;
-            width: 50px;
-            margin: 0;
-            margin-bottom: 15px;
-        }
-
-        .custom-card p {
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-
-        .custom-card .arrow {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            font-size: 18px;
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .custom-card .arrow:hover {
-            color: #e6f3ff;
-            /* Lighter blue on hover */
-        }
-    </style>
 </head>
 
 <body>
-    </head>
 
-    <body>
+    <div style="background-color: #F5F5F5; padding-inline: 375px;"
+        class="py-3 d-flex justify-content-between align-items-center">
+        <span>
+            <span class="text-decoration-underline fw-semibold" style="color: #004684; line-height: 21.79px;">A</span>
+            <span class="fw-semibold " style="color: #004684;font-size: 20px;line-height: 27.24px;">A</span>
+            <span class="fw-semibold " style="color: #004684;font-size: 24px;line-height: 32.68px;">A</span>
+        </span>
 
-        <div style="background-color: #F5F5F5; padding-inline: 375px;"
-            class="py-3 d-flex justify-content-between align-items-center">
-            <span>
-                <span class="text-decoration-underline fw-semibold"
-                    style="color: #004684; line-height: 21.79px;">A</span>
-                <span class="fw-semibold " style="color: #004684;font-size: 20px;line-height: 27.24px;">A</span>
-                <span class="fw-semibold " style="color: #004684;font-size: 24px;line-height: 32.68px;">A</span>
-            </span>
-
-            <div class="d-flex gap-3">
-                <span class="fw-semibold" style="color: #6F6F6F;line-height: 21.79px;">Language :</span>
-                <img src="./assets/image 1.svg" alt="flag-1" style="height: 23px; width: 23px;">
-                <img src="./assets/image 2.svg" alt="flag-2" style="height: 23px; width: 23px;">
-                <img src="./assets/image 3.svg" alt="flag-3" style="height: 23px; width: 23px;">
-            </div>
-
+        <div class="d-flex gap-3">
+            <span class="fw-semibold" style="color: #6F6F6F;line-height: 21.79px;">Language :</span>
+            <img src="./assets/image 1.svg" alt="flag-1" style="height: 23px; width: 23px;">
+            <img src="./assets/image 2.svg" alt="flag-2" style="height: 23px; width: 23px;">
+            <img src="./assets/image 3.svg" alt="flag-3" style="height: 23px; width: 23px;">
         </div>
 
-        <div class="py-2 d-flex justify-content-between align-items-center" style="padding-inline: 375px;">
-            <img src="./assets/logo.svg" alt="logo">
-            <div class="d-flex align-items-center">
+    </div>
 
-                <div class="d-flex gap-2">
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                </div>
+    <div class="py-2 d-flex justify-content-between align-items-center" style="padding-inline: 375px;">
+        <img src="./assets/logo.svg" alt="logo">
+        <div class="d-flex align-items-center">
 
-
-                <div class="container">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search" aria-label="Search"
-                            style="::placeholder { color: #6F6F6F;font-weight: 500; }">
-                        <button class="search-button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </div>
+            <div class="d-flex gap-2">
+                <span class="d-flex justify-content-center align-items-center"
+                    style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                    <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                </span>
+                <span class="d-flex justify-content-center align-items-center"
+                    style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                    <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                </span>
+                <span class="d-flex justify-content-center align-items-center"
+                    style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                    <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                </span>
             </div>
 
-        </div>
 
-        <!-- navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-custom" style="padding-block: 0px;padding-inline: 375px;">
-            <div class="container px-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav d-flex gap-4 me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                                <li><a class="dropdown-item" href="#">Our Mission</a></li>
-                                <li><a class="dropdown-item" href="#">Team</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="cooperationDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Cooperation
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="cooperationDropdown">
-                                <li><a class="dropdown-item" href="#">Partners</a></li>
-                                <li><a class="dropdown-item" href="#">Opportunities</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="subsidyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Subsidy
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="subsidyDropdown">
-                                <li><a class="dropdown-item" href="#">Eligibility</a></li>
-                                <li><a class="dropdown-item" href="#">Application</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                School Competition
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
-                                <li><a class="dropdown-item" href="#">Details</a></li>
-                                <li><a class="dropdown-item" href="#">Registration</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <button class="btn btn-contact fw-semibold text-white"
-                        style="padding: 18px 30px;text-transform: uppercase;">Contact Us</button>
+            <div class="container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" aria-label="Search"
+                        style="::placeholder { color: #6F6F6F;font-weight: 500; }">
+                    <button class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </div>
             </div>
-        </nav>
-
-        <div class="text-center" style="padding-inline: 375px;background-color: #002749;padding-block: 40px;">
-
-
-            <p class="fw-bold text-white" style="font-size: 45px;line-height: 76px;">Contact</p>
-
         </div>
 
+    </div>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-custom" style="padding-block: 0px;padding-inline: 375px;">
+        <div class="container px-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex gap-4 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Our Mission</a></li>
+                            <li><a class="dropdown-item" href="#">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cooperationDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cooperation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cooperationDropdown">
+                            <li><a class="dropdown-item" href="#">Partners</a></li>
+                            <li><a class="dropdown-item" href="#">Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="subsidyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Subsidy
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="subsidyDropdown">
+                            <li><a class="dropdown-item" href="#">Eligibility</a></li>
+                            <li><a class="dropdown-item" href="#">Application</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            School Competition
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
+                            <li><a class="dropdown-item" href="#">Details</a></li>
+                            <li><a class="dropdown-item" href="#">Registration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-contact fw-semibold text-white"
+                    style="padding: 18px 30px;text-transform: uppercase;">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center" style="padding-inline: 375px;background-color: #002749;padding-block: 40px;">
+
+
+        <p class="fw-bold text-white" style="font-size: 45px;line-height: 76px;">Contact</p>
+
+    </div>
 
 
 
@@ -250,15 +136,16 @@
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
 
 </html>
