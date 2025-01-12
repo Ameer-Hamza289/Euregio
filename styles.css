@@ -289,6 +289,32 @@ body {
     background-color: #003366;
 }
 
+
+/* Department styles  */
+.dept-select{
+    margin-left: 10px; 
+    background-color: rgba(255,255,255,0.23);
+    color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.23);
+    padding: 8px 16px;
+    width: 476px;
+    height: 44px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url('./assets/select-down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    transition: all 0.2s ease-in-out;
+}
+  /*Department styles end here */
+
+
+
+
 @media screen and (max-width: 1536px) {
     .px-375 {
         padding-inline: 20px;
