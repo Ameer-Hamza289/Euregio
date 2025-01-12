@@ -130,6 +130,163 @@
     </div>
 
 
+    <!-- form section  -->
+    <div class="px-375" style="padding-block: 30px;margin-bottom: 40px;">
+        <div style="padding-inline: 100px;">
+            <div class="d-flex justify-content-end">
+                <img src="./assets/lees_voor.svg" alt="lees_voor">
+            </div>
+            <div class="d-flex justify-content-center my-5">
+                <div class="mb-2" style="border-bottom: 1px solid #004684;width: 300px;">
+                    <p class="fw-bold text-center" style="font-size: 35px;line-height: 45px;color: #004684;">Contact
+                        Form</p>
+                </div>
+            </div>
+            <div class="my-5" style="background-color: #D4E6F3;padding: 64px;border-radius: 6px; padding-bottom: 83px;">
+                <form action="">
+
+                    <p class="form-label">Mr/Ms:</p>
+                    <div class="mb-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="title" id="mr" value="Mr">
+                            <label class="form-check-label" for="mr">Mr.</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="title" id="mrs" value="Mrs">
+                            <label class="form-check-label" for="mrs">Mrs.</label>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="first-name" class="form-label">First Name*</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="postcode" class="form-label">Postcode</label>
+                            <input type="text" class="form-control" id="postcode" placeholder="Your Postcode">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="residence" class="form-label">Place of Residence</label>
+                            <input type="text" class="form-control" id="residence" placeholder="Your Residence">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Your Address">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="comments" class="form-label">Comments*</label>
+                        <textarea class="form-control" id="comments" rows="5" placeholder="Your Comments"
+                            required></textarea>
+                    </div>
+
+                    <button class="text-white fw-semibold form-submit" type="submit"
+                        style="background-color: #004684;border-radius: 6px;padding-block: 19px;padding-inline: 60px;">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Map  -->
+
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=1920&amp;height=555&amp;hl=en&amp;q=Euregio Rhein-Waal&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://sprunkiplay.com/">Sprunki Game</a></div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 555px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 555px;
+            }
+
+            .gmap_iframe {
+                height: 555px !important;
+            }
+        </style>
+    </div>
+
+    <!-- footer section  -->
+    <div class="px-375 pb-lg-5 pb-md-5 pb-4" style="padding-top: 61px ; background-color: #002749;">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class=" d-flex flex-column mb-lg-5 mb-2">
+                <p class="text-white fs-medium mb-lg-5 mb-2" style="font-size: 18px;line-height: 28px;">ADDRESS</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Euregio Rhine-Waal</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Emmericher Straße 24</p>
+                <p class="fw-medium" style="color: #C2C2C2;">47533 Kleve</p>
+            </div>
+            <div class="d-flex flex-column  pe-lg-0 pe-5 mb-lg-5 mb-2">
+                <p class="text-white fs-medium mb-lg-4 mb-2 " style="font-size: 18px;line-height: 28px;">
+                    CONTACT
+                </p>
+                <p class="fw-medium" style="color: #C2C2C2;">Tel: +49 (0) 2821 7930 0</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Fax: +49 (0) 2821 7930 30</p>
+                <p class="fw-medium" style="color: #C2C2C2;">E-mail: info(at)euregio.org</p>
+                <div class="d-flex gap-2">
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#3B5998 ;height: 32px; width: 32px;cursor:pointer;">
+                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#515BD4 ;height: 32px; width: 32px;cursor:pointer;">
+                        <img src="./assets/insta.svg" alt="instagram-icon" style="height: 14px; width: 14px;">
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#007BB6 ;height: 32px; width: 32px;cursor:pointer;">
+                        <img src="./assets/linkedIn.svg" alt="linkedin-icon" style="height: 14px; width: 14px;">
+                    </span>
+                </div>
+            </div>
+            <div class="d-block d-lg-flex ">
+                <div class="d-flex flex-column">
+                    <span class="mb-lg-5 mb-3"></span>
+                    <p class="fw-medium mt-2" style="color: #C2C2C2;">Colophon</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Disclaimer</p>
+                    <p class="fw-medium" style="color: #C2C2C2;">Data protection</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright  -->
+    <div class="d-flex justify-content-center align-items-center"
+        style="background-color: #004684;padding-block: 16px;">
+        <span class="text-white" style="font-size: 14px;line-height: 24px;">Copyright © 2024 Euregio - All rights
+            reserved.</span>
+    </div>
+
+
 
 
 

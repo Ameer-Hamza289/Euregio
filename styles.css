@@ -267,6 +267,28 @@ body {
 }
 
 
+.form-label {
+    color: #6f6f6f;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 6px;
+}
+
+.form-submit {
+    background-color: #004684;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 12px 40px;
+    border: none;
+}
+
+.form-submit:hover {
+    background-color: #003366;
+}
+
 @media screen and (max-width: 1536px) {
     .px-375 {
         padding-inline: 20px;
