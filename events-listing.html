@@ -42,7 +42,7 @@
 </head>
 <body>
   <div class="container mt-5">
-    <div id="events-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div id="events-container" class="row g-4">
       <!-- Dynamic Event Cards -->
     </div>
 
@@ -79,17 +79,28 @@
 
       eventsToShow.forEach((event) => {
         container.append(`
-          <div class="col">
-            <div class="event-card">
-              <img src="${event.image}" alt="Event Image">
-              <div class="card-body">
-                <p class="card-date">${event.date}</p>
-                <h5 class="card-title">${event.title}</h5>
-                <p class="card-text">${event.description}</p>
-                <a href="#" class="btn btn-link">Read More →</a>
-              </div>
+          <div class="col-md-6 col-12">
+                <div style="border-radius: 6px;" class="overflow-hidden d-flex">
+                    <div style="width: 217px;height: 100%;">
+                        <img src="./assets/news1.svg" alt="project-1-img">
+                    </div>
+                    <div style="background-color: #F6F6F6;padding-top: 21px;padding-inline: 31px;padding-bottom: 38px;">
+                        <div class="d-flex gap-2">
+                            <i class="bi bi-calendar2-week" style="color: #6F6F6F;"></i>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">25.11.2024</p>
+                        </div>
+                        <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">Lorem Ipsum is
+                            simply dummy</p>
+                        <p class="fw-medium" style="line-height: 28px;">Lorem Ipsum has been the industry's standard
+                            dummy text.</p>
+                        <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
+                            <div style="width: 9px;height: 23px;background-color: #004684;"></div>
+                            <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
+                            <img src="./assets/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         `);
       });
     }
