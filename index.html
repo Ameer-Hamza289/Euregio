@@ -36,7 +36,7 @@
             style="background-color: white;">
             <img src="./assets/logo.svg" alt="logo" class="navbar-logo">
             <div class="navbar-icons d-flex align-items-center">
-                <div class="d-md-flex d-none gap-2">
+                <div class="d-md-flex d-none gap-2 pe-4">
                     <span class="icon-wrapper">
                         <img src="./assets/fb.svg" alt="facebook-icon" class="icon-image">
                     </span>
@@ -60,14 +60,13 @@
                     <span class="icon-wrapper" style="color: white;">
                         <i class="bi bi-telephone"></i>
                     </span>
-                    <button class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        style="color: white;">
-                        <i class="bi bi-list"></i>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="color: white;"><i class="bi bi-list"></i></span>
                     </button>
                 </div>
             </div>
         </div>
-
         <nav class="navbar navbar-expand-lg navbar-custom px-375 py-0">
             <div class="container px-0">
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -106,7 +105,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <button class="btn btn-contact">Contact Us</button>
+                    <button class="btn btn-contact">CONTACT US</button>
                 </div>
             </div>
         </nav>
@@ -150,15 +149,17 @@
             </div>
             <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#customCarousel"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon d-flex justify-content-center align-items-center home-carousel-prev""
-                    aria-hidden="true">
+                <span
+                    class="carousel-control-prev-icon d-flex justify-content-center align-items-center home-carousel-prev""
+                    aria-hidden=" true">
                     <i class="bi bi-chevron-left text-success"></i>
                 </span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#customCarousel"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon d-flex justify-content-center align-items-center home-carousel-next"
+                <span
+                    class="carousel-control-next-icon d-flex justify-content-center align-items-center home-carousel-next"
                     aria-hidden="true">
                     <i class="bi bi-chevron-right text-success"></i>
                 </span>
@@ -572,6 +573,22 @@
             <span class="text-white" style="font-size: 14px;line-height: 24px;">Copyright © 2024 Euregio - All rights
                 reserved.</span>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const navbarNav = document.getElementById('navbarNav');
+                const navbarLinks = navbarNav.querySelectorAll('.nav-link, .dropdown-item');
+
+                // Close the navbar when clicking a link
+                navbarLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        const navbarCollapse = new bootstrap.Collapse(navbarNav, { toggle: true });
+                        navbarCollapse.hide();
+                    });
+                });
+            });
+        </script>
+
 
 
 
