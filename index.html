@@ -32,76 +32,58 @@
             </div>
         </div>
         <!--Before Navbar  -->
-        <div class="py-2 d-flex justify-content-between align-items-center px-375">
-            <img src="./assets/logo.svg" alt="logo">
-            <div class="d-flex align-items-center">
+        <div class="navbar-container py-2 d-flex justify-content-between align-items-center px-375"
+            style="background-color: white;">
+            <img src="./assets/logo.svg" alt="logo" class="navbar-logo">
+            <div class="navbar-icons d-flex align-items-center">
                 <div class="d-md-flex d-none gap-2">
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    <span class="icon-wrapper">
+                        <img src="./assets/fb.svg" alt="facebook-icon" class="icon-image">
                     </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    <span class="icon-wrapper">
+                        <img src="./assets/insta.svg" alt="instagram-icon" class="icon-image">
                     </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    <span class="icon-wrapper">
+                        <img src="./assets/linkedIn.svg" alt="linkedin-icon" class="icon-image">
                     </span>
                 </div>
-                <div class="d-md-none d-flex gap-2">
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
+                <div class="search-bar d-md-flex d-none">
+                    <input type="text" class="search-input" placeholder="Search" aria-label="Search">
+                    <button class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </div>
-                <div class="container">
-                    <div class="search-bar d-md-flex d-none">
-                        <input type="text" placeholder="Search" aria-label="Search"
-                            style="::placeholder { color: #6F6F6F;font-weight: 500; }">
-                        <button class="search-button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
+                <div class="d-md-none d-flex gap-2 navbar-mobile-icons">
+                    <span class="icon-wrapper" style="color: white;">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <span class="icon-wrapper" style="color: white;">
+                        <i class="bi bi-telephone"></i>
+                    </span>
+                    <button class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        style="color: white;">
+                        <i class="bi bi-list"></i>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-custom px-375" style="padding-block: 0px;">
+        <nav class="navbar navbar-expand-lg navbar-custom px-375 py-0">
             <div class="container px-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-4 me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                data-bs-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Our Mission</a></li>
                                 <li><a class="dropdown-item" href="#">Team</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="cooperationDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Cooperation
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Cooperation</a>
                             <ul class="dropdown-menu" aria-labelledby="cooperationDropdown">
                                 <li><a class="dropdown-item" href="#">Partners</a></li>
                                 <li><a class="dropdown-item" href="#">Opportunities</a></li>
@@ -109,9 +91,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="subsidyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Subsidy
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Subsidy</a>
                             <ul class="dropdown-menu" aria-labelledby="subsidyDropdown">
                                 <li><a class="dropdown-item" href="#">Eligibility</a></li>
                                 <li><a class="dropdown-item" href="#">Application</a></li>
@@ -119,20 +99,18 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                School Competition
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">School Competition</a>
                             <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
                                 <li><a class="dropdown-item" href="#">Details</a></li>
                                 <li><a class="dropdown-item" href="#">Registration</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <button class="btn btn-contact fw-semibold text-white"
-                        style="padding: 18px 30px;text-transform: uppercase;">Contact Us</button>
+                    <button class="btn btn-contact">Contact Us</button>
                 </div>
             </div>
         </nav>
+
 
 
 
