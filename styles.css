@@ -253,8 +253,8 @@ body {
     border: 1px solid #CFCFCF;
     border-radius: 5px;
     padding: 10px;
-    width: 120px;
-    height: 80px;
+    width: 136px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,13 +318,13 @@ body {
     color: white;
 }
 
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
+.home-carousel-prev,
+.home-carousel-next {
     background-color: white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-} */
+}
 
 .carousel-indicators [data-bs-target] {
     background-color: white;
@@ -343,6 +343,54 @@ body {
     top: -15px;
     right: 0;
 }
+
+
+.form-label {
+    color: #6f6f6f;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 6px;
+}
+
+.form-submit {
+    background-color: #004684;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 12px 40px;
+    border: none;
+}
+
+.form-submit:hover {
+    background-color: #003366;
+}
+
+
+/* Department styles  */
+.dept-select{
+    margin-left: 10px; 
+    background-color: rgba(255,255,255,0.23);
+    color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.23);
+    padding: 8px 16px;
+    width: 476px;
+    height: 44px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url('./assets/select-down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    transition: all 0.2s ease-in-out;
+}
+  /*Department styles end here */
+
+
 
 
 @media screen and (max-width: 1536px) {
