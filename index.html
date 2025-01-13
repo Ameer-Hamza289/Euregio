@@ -32,76 +32,58 @@
             </div>
         </div>
         <!--Before Navbar  -->
-        <div class="py-2 d-flex justify-content-between align-items-center px-375">
-            <img src="./assets/logo.svg" alt="logo">
-            <div class="d-flex align-items-center">
+        <div class="navbar-container py-2 d-flex justify-content-between align-items-center px-375"
+            style="background-color: white;">
+            <img src="./assets/logo.svg" alt="logo" class="navbar-logo">
+            <div class="navbar-icons d-flex align-items-center">
                 <div class="d-md-flex d-none gap-2">
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    <span class="icon-wrapper">
+                        <img src="./assets/fb.svg" alt="facebook-icon" class="icon-image">
                     </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    <span class="icon-wrapper">
+                        <img src="./assets/insta.svg" alt="instagram-icon" class="icon-image">
                     </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    <span class="icon-wrapper">
+                        <img src="./assets/linkedIn.svg" alt="linkedin-icon" class="icon-image">
                     </span>
                 </div>
-                <div class="d-md-none d-flex gap-2">
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
-                    <span class="d-flex justify-content-center align-items-center"
-                        style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
-                        <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
-                    </span>
+                <div class="search-bar d-md-flex d-none">
+                    <input type="text" class="search-input" placeholder="Search" aria-label="Search">
+                    <button class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </div>
-                <div class="container">
-                    <div class="search-bar d-md-flex d-none">
-                        <input type="text" placeholder="Search" aria-label="Search"
-                            style="::placeholder { color: #6F6F6F;font-weight: 500; }">
-                        <button class="search-button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
+                <div class="d-md-none d-flex gap-2 navbar-mobile-icons">
+                    <span class="icon-wrapper" style="color: white;">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <span class="icon-wrapper" style="color: white;">
+                        <i class="bi bi-telephone"></i>
+                    </span>
+                    <button class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        style="color: white;">
+                        <i class="bi bi-list"></i>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-custom px-375" style="padding-block: 0px;">
+        <nav class="navbar navbar-expand-lg navbar-custom px-375 py-0">
             <div class="container px-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-4 me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                data-bs-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Our Mission</a></li>
                                 <li><a class="dropdown-item" href="#">Team</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="cooperationDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Cooperation
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Cooperation</a>
                             <ul class="dropdown-menu" aria-labelledby="cooperationDropdown">
                                 <li><a class="dropdown-item" href="#">Partners</a></li>
                                 <li><a class="dropdown-item" href="#">Opportunities</a></li>
@@ -109,9 +91,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="subsidyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Subsidy
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Subsidy</a>
                             <ul class="dropdown-menu" aria-labelledby="subsidyDropdown">
                                 <li><a class="dropdown-item" href="#">Eligibility</a></li>
                                 <li><a class="dropdown-item" href="#">Application</a></li>
@@ -119,20 +99,20 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                School Competition
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">School Competition</a>
                             <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
                                 <li><a class="dropdown-item" href="#">Details</a></li>
                                 <li><a class="dropdown-item" href="#">Registration</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <button class="btn btn-contact fw-semibold text-white"
-                        style="padding: 18px 30px;text-transform: uppercase;">Contact Us</button>
+                    <button class="btn btn-contact">Contact Us</button>
                 </div>
             </div>
         </nav>
+
+
+
 
         <!-- carousel  -->
         <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -146,42 +126,45 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/1.jpg" class="d-block w-100" alt="First slide">
+                    <img src="./assets/1.jpg" class="d-block w-100 carousel-img" alt="First slide">
                     <div class="carousel-caption">
-                        <h1 class="pb-2 ">Welcome to the Rhine-Waal </h1>
-                        <h1 class="pb-2 ">Euroregion </h1>
-                        <button class="btn" style="margin-top: 75px;">LEARN MORE</button>
+                        <h1 class="pb-2">Welcome to the Rhine-Waal</h1>
+                        <!-- <h1 class="pb-2">Euroregion</h1> -->
+                        <button class="btn btn-primary">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/2.jpg" class="d-block w-100" alt="Second slide">
+                    <img src="./assets/2.jpg" class="d-block w-100 carousel-img" alt="Second slide">
                     <div class="carousel-caption">
                         <h1>Experience Nature and Innovation</h1>
-                        <button class="btn">Learn More</button>
+                        <button class="btn btn-primary">Learn More</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/3.jpg" class="d-block w-100" alt="Third slide">
+                    <img src="./assets/3.jpg" class="d-block w-100 carousel-img" alt="Third slide">
                     <div class="carousel-caption">
                         <h1>Join Our Community</h1>
-                        <button class="btn">Learn More</button>
+                        <button class="btn btn-primary">Learn More</button>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon d-flex justify-content-center align-items-center home-carousel-prev"
+            <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#customCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d-flex justify-content-center align-items-center home-carousel-prev""
                     aria-hidden="true">
                     <i class="bi bi-chevron-left text-success"></i>
                 </span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+            <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#customCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon d-flex justify-content-center align-items-center home-carousel-next"
                     aria-hidden="true">
                     <i class="bi bi-chevron-right text-success"></i>
                 </span>
                 <span class="visually-hidden">Next</span>
             </button>
+
         </div>
 
         <!-- cards  -->
@@ -242,6 +225,8 @@
             </div>
         </div>
         </div>
+
+
 
 
         <!-- news & events  -->
@@ -374,14 +359,18 @@
 
         <div class="bg-white px-375 py-4 py-lg-5">
             <!-- Top Section with Image -->
-            <div class="d-flex justify-content-center justify-content-lg-end">
-                <img src="./assets/lees_voor.svg" alt="lees_voor" class="cursor-pointer">
+            <div class="d-flex justify-content-end flex-row-reverse flex-md-row">
+                <img src="./assets/lees_voor.svg" alt="lees_voor" class="img-fluid" style="width: 10rem;">
             </div>
 
             <!-- Center Section with Text -->
             <div class="text-center">
-                <img src="./assets/GreenZInfo.svg" alt="grrenzInfo" class="w-75 my-4">
-                <p class="fw-semibold  mx-3 mx-md-5" style="line-height: 1.8; color:#6F6F6F ;">
+                <img src="./assets/GreenZInfo.svg" alt="grrenzInfo" class="w-75 my-4 ">
+
+                <p class=" fw-semibold mx-3 mx-md-5 text-start text-lg-center text-md-center"
+                    style=" line-height: 1.8; color:#6F6F6F;">
+
+
                     As consumers, cross-border commuters, or information seekers, the inhabitants of the Euregio
                     Rhine-Waal
                     are increasingly confronted with questions and problems, the origins of which can often be traced
@@ -397,11 +386,17 @@
             <!-- Content Sections -->
             <div class="d-flex flex-column mt-5 gap-5">
                 <!-- Section 1 -->
-                <div class="row align-items-center">
+                <div class="row align-items-center py-lg-5 ">
+                    <div class="d-md-none d-block col-lg-6 text-center mt-4 mt-lg-0 ">
+                        <img src="./assets/first.svg" alt="first-image" class="img-fluid ">
+                    </div>
+
                     <div class="col-lg-6 text-lg-start text-center px-4">
-                        <h2 class="fw-bold mb-3" style="font-size: 1.75rem; line-height: 2.5rem;color:#004684;">Subsidie
+                        <h2 class="fw-bold mb-3 text-start"
+                            style="font-size: 1.75rem; line-height: 2.5rem;color:#004684;">
+                            Subsidie
                             Advies</h2>
-                        <p class="fw-medium  my-3" style="line-height: 1.8; color:#6F6F6F;">
+                        <p class="fw-medium my-3 text-start" style="line-height: 1.8; color:#6F6F6F;">
                             Interested parties can contact the office of the Euregio Rhine-Waal for advice on the
                             subsidisation
                             of projects within the framework of <span class="fw-bold">INTERREG
@@ -409,42 +404,49 @@
                             cross-border activities in the field of <span class="fw-bold">society, sport, and
                                 culture</span>.
                         </p>
-                        <p class="fw-medium" style="line-height: 1.8;color:#6F6F6F;">
+                        <p class="fw-medium text-start" style="line-height: 1.8;color:#6F6F6F;">
                             Qualified employees inform potential applicants about the subsidy possibilities in the
                             Euregio
                             Rhine-Waal, the subsidy programmes, and the contact persons for these programmes, as well as
                             about
                             the subsidy priorities and current project initiatives.
                         </p>
-                        <button class="btn text-white fw-semibold mt-4 px-5 py-3 rounded-pill"
-                            style="background-color: #004684;">
-                            MEER LEZEN
-                        </button>
+                        <div class="text-start">
+                            <button class="btn text-white fw-semibold mt-4 px-5 py-3 rounded-pill"
+                                style="background-color: #004684;">
+                                MEER LEZEN
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                        <img src="./assets/first.svg" alt="first-image" class="img-fluid">
+                    <div class="d-md-block d-none col-lg-6 text-center mt-4 mt-lg-0 ">
+                        <img src="./assets/first.svg" alt="first-image" class="img-fluid ">
                     </div>
-                </div>
 
-                <!-- Section 2 -->
-                <div class="row align-items-center flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                        <img src="./assets/second.svg" alt="second-image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 text-lg-start text-center px-4">
-                        <h2 class="fw-bold mb-3" style="font-size: 1.75rem; line-height: 2.5rem;color:#004684;">
-                            Belangenbeharteging</h2>
-                        <p class="fw-medium my-3" style="line-height: 1.8;color: #6F6F6F;">
-                            The Euregio Rhine-Waal is seen as an advocate for the entire border region. We advocate for
-                            the
-                            interests of the border region with Dutch, German, and European institutions and bodies, in
-                            order
-                            to sustainably improve the cross-border accessibility of the existing supply.
-                        </p>
-                        <p class="fw-medium " style="line-height: 1.8;color:#6F6F6F;">
-                            The advocacy takes place in all socially relevant areas, from economy and infrastructure to
-                            education and culture.
-                        </p>
+
+
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="row align-items-center flex-column flex-lg-row">
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img src="./assets/second.svg" alt="second-image" class="img-fluid">
+                </div>
+                <div class="col-lg-6 text-start px-4">
+                    <!-- The content inside here -->
+                    <h2 class="fw-bold mb-3 text-start" style="font-size: 1.75rem; line-height: 2.5rem;color:#004684;">
+                        Belangenbeharteging
+                    </h2>
+                    <p class="fw-medium my-3 text-start" style="line-height: 1.8;color: #6F6F6F;">
+                        The Euregio Rhine-Waal is seen as an advocate for the entire border region. We advocate for
+                        the interests of the border region with Dutch, German, and European institutions and bodies, in
+                        order to sustainably improve the cross-border accessibility of the existing supply.
+                    </p>
+                    <p class="fw-medium text-start" style="line-height: 1.8;color:#6F6F6F;">
+                        The advocacy takes place in all socially relevant areas, from economy and infrastructure to
+                        education and culture.
+                    </p>
+                    <div class="text-start">
                         <button class="btn text-white fw-semibold mt-4 px-5 py-3 rounded-pill"
                             style="background-color:#004684;">
                             MEER LEZEN
@@ -452,6 +454,9 @@
                     </div>
                 </div>
             </div>
+
+
+        </div>
         </div>
 
 
@@ -461,7 +466,7 @@
                 <img src="./assets/lees_voor.svg" alt="lees_voor" class="img-fluid" style="width: 10rem;">
             </div>
             <p class="fw-bold text-white text-center text-lg-start mt-lg-5 mb-lg-5 mt-3 "
-                style="line-height: 1.2; font-size: calc(1.5rem + 2vw); ">
+                style="line-height: 1.5; font-size: calc(1.5rem + 2vw); ">
                 Embark on an exhilarating journey with endless possibilities. Let's dive into your project!
             </p>
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
