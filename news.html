@@ -219,7 +219,7 @@
 
         <!-- Pagination -->
         <nav class="d-flex justify-content-center" style="margin-top:54px;">
-            <ul id="pagination" class="pagination"></ul>
+            <ul class="pagination"></ul>
         </nav>
 
     </div>
@@ -288,7 +288,7 @@
 </body>
 <script>
     // Mock Data for Events
-    const events = Array.from({ length: 31 }, (_, i) => ({
+    const news = Array.from({ length: 31 }, (_, i) => ({
         date: "25.11.2024",
         title: `Event Title ${i + 1}`,
         description: "Lorem Ipsum has been the industry's standard dummy text.",
@@ -302,7 +302,7 @@
     function renderEvents(page) {
         const startIndex = (page - 1) * eventsPerPage;
         const endIndex = startIndex + eventsPerPage;
-        const eventsToShow = events.slice(startIndex, endIndex);
+        const eventsToShow = news.slice(startIndex, endIndex);
 
         const container = $(".news-container");
         container.empty(); // Clear previous events
@@ -337,8 +337,8 @@
 
     // Function to render pagination
     function renderPagination() {
-        const totalPages = Math.ceil(events.length / eventsPerPage);
-        const pagination = $("#pagination");
+        const totalPages = Math.ceil(news.length / eventsPerPage);
+        const pagination = $(".pagination");
         pagination.empty(); // Clear previous pagination
 
         // Previous Button
@@ -369,7 +369,7 @@
     $(document).on("click", ".page-link", function (e) {
         e.preventDefault();
         const page = parseInt($(this).data("page"));
-        if (!isNaN(page) && page > 0 && page <= Math.ceil(events.length / eventsPerPage)) {
+        if (!isNaN(page) && page > 0 && page <= Math.ceil(news.length / eventsPerPage)) {
             currentPage = page;
             renderEvents(currentPage);
             renderPagination();
