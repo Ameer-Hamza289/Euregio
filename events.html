@@ -61,46 +61,75 @@
             background-color: #D4E6F3;
             padding-inline: 58px;
             padding-block: 50px;
+            border-radius: 6px;
         }
 
-        
-
-        .form-control {
-            border-radius: 5px;
-            height: 45px;
-        }
-
-        .form-control::placeholder {
-            font-size: 0.9rem;
-        }
-
-        /* Icons */
-        .input-group-text {
-            background: transparent;
+        .custom-field {
+            padding-inline: 26px;
+            /* Inline padding (left/right) */
+            padding-block: 19px;
+            /* Block padding (top/bottom) */
             border: none;
-            font-size: 1.2rem;
+            color: #6F6F6F;
         }
 
-        /* Dropdown */
-        .form-select {
-            border-radius: 5px;
-            height: 45px;
-        }
+
 
         /* Button */
         .btn-find-events {
-            background-color: #0d6efd;
-            /* Blue Button */
-            color: white;
-            height: 45px;
-            border-radius: 5px;
-            font-weight: bold;
-            border: none;
+            background-color: #003f88;
+            /* Dark blue button */
+            color: #fff;
+            padding-inline: 26px;
+            /* Inline padding */
+            padding-block: 19px;
+            /* Block padding */
         }
 
         .btn-find-events:hover {
-            background-color: #084298;
-            /* Darker Blue on Hover */
+            background-color: #002a5f;
+            /* Darker blue on hover */
+        }
+
+        /* paginationn listing styles  */
+        .pagination {
+            font-size: 14px;
+            font-weight: bold;
+            color: #6F6F6F;
+        }
+
+        .pagination .page-item .page-link {
+            color: #6F6F6F;
+            padding: 10px 16px;
+            border: 1px solid #D4E6F3;
+            margin: 0 4px;
+            border-radius: 50px;
+            background-color: #D8D8D8;
+            transition: all 0.3s ease-in-out;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #004684;
+            color: white;
+            border: none;
+        }
+
+        .pagination .page-item .page-link:hover {
+            background-color: #D4E6F3;
+            color: #004684;
+            text-decoration: none;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #C2C2C2;
+            pointer-events: none;
+            background-color: #F5F5F5;
+            border: none;
         }
     </style>
 </head>
@@ -282,47 +311,83 @@
 
         <div style="padding-top:108px ;">
             <div class="search-container">
-                <form class="row g-2 align-items-center">
+                <form class="">
                     <!-- Search Event -->
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Event"
-                                aria-label="Search Event" />
-                            <span class="input-group-text bg-white border-0">
-                                <i class="bi bi-search"></i>
-                            </span>
+                    <div class="row g-2">
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <input type="text" class="form-control custom-field" placeholder="Search Event">
+                                <span class="input-group-text bg-white border-0 pe-4">
+                                    <i class="bi bi-search"></i> <!-- Bootstrap icon -->
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control custom-field" placeholder="In a Location">
+                                <span class="input-group-text bg-white border-0 pe-4">
+                                    <i class="bi bi-geo-alt"></i> <!-- Bootstrap icon -->
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-find-events w-100">FIND EVENTS</button>
                         </div>
                     </div>
 
-                    <!-- Location -->
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="In a Location" aria-label="Location" />
-                            <span class="input-group-text bg-white border-0">
-                                <i class="bi bi-geo-alt"></i>
-                            </span>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <select class="form-select custom-field">
+                                <option selected>Show all events</option>
+                                <option value="1">Event 1</option>
+                                <option value="2">Event 2</option>
+                                <option value="3">Event 3</option>
+                            </select>
                         </div>
                     </div>
 
-                    <!-- Dropdown -->
-                    <div class="col-md-3">
-                        <select class="form-select">
-                            <option>Show all events</option>
-                            <option>Upcoming events</option>
-                            <option>Past events</option>
-                        </select>
-                    </div>
 
-                    <!-- Find Events Button -->
-                    <div class="col-md-1">
-                        <button type="submit" class="btn btn-find-events w-100">
-                            FIND EVENTS
-                        </button>
-                    </div>
+
+
                 </form>
             </div>
 
         </div>
+
+        <div class="text-end" style="padding-top: 25px;padding-bottom: 30px;">
+            <img src="./assets/lees_voor.svg" alt="lees_voor">
+        </div>
+        <div class="row g-4 events-container">
+            <!-- event 1  -->
+            <div class="col-md-6 col-12">
+                <div style="border-radius: 6px;" class="overflow-hidden d-flex">
+                    <div style="width: 217px;height: 100%;">
+                        <img src="./assets/news1.svg" alt="project-1-img">
+                    </div>
+                    <div style="background-color: #F6F6F6;padding-top: 21px;padding-inline: 31px;padding-bottom: 38px;">
+                        <div class="d-flex gap-2">
+                            <i class="bi bi-calendar2-week" style="color: #6F6F6F;"></i>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">25.11.2024</p>
+                        </div>
+                        <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">Lorem Ipsum is
+                            simply dummy</p>
+                        <p class="fw-medium" style="line-height: 28px;">Lorem Ipsum has been the industry's standard
+                            dummy text.</p>
+                        <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
+                            <div style="width: 9px;height: 23px;background-color: #004684;"></div>
+                            <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
+                            <img src="./assets/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="d-flex justify-content-center" style="margin-top:54px;">
+            <ul class="pagination"></ul>
+        </nav>
+
 
 
     </div>
@@ -390,6 +455,8 @@
 
 </body>
 <script>
+
+    // Calender logics start 
     const events = {
         '2025-01-17': {
             title: 'Lorem Ipsum is simply dummy',
@@ -473,6 +540,104 @@
 
         renderCalendar(currentMonth, currentYear);
     });
+    // calendar logics end
+
+    // Mock Data for Events
+    const eventsArray = Array.from({ length: 31 }, (_, i) => ({
+        date: "25.11.2024",
+        title: `Event Title ${i + 1}`,
+        description: "Lorem Ipsum has been the industry's standard dummy text.",
+        image: "https://via.placeholder.com/300x200",
+    }));
+
+    const eventsPerPage = 6;
+    let currentPage = 1;
+
+    // Function to render events
+    function renderEvents(page) {
+        const startIndex = (page - 1) * eventsPerPage;
+        const endIndex = startIndex + eventsPerPage;
+        const eventsToShow = eventsArray.slice(startIndex, endIndex);
+
+        const container = $(".events-container");
+        container.empty(); // Clear previous events
+
+        eventsToShow.forEach((event) => {
+            container.append(`
+          <div class="col-md-6 col-12">
+                <div style="border-radius: 6px;" class="overflow-hidden d-flex">
+                    <div style="width: 217px;height: 100%;">
+                        <img src="./assets/event_image.svg" alt="project-1-img">
+                    </div>
+                    <div style="background-color: #F6F6F6;padding-top: 21px;padding-inline: 31px;padding-bottom: 38px;">
+                        <div class="d-flex gap-2">
+                            <i class="bi bi-calendar2-week" style="color: #6F6F6F;"></i>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">25.11.2024</p>
+                        </div>
+                        <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">Lorem Ipsum is
+                            simply dummy</p>
+                        <p class="fw-medium" style="line-height: 28px;">Lorem Ipsum has been the industry's standard
+                            dummy text.</p>
+                        <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
+                            <div style="width: 9px;height: 23px;background-color: #004684;"></div>
+                            <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
+                            <img src="./assets/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+        });
+    }
+
+    // Function to render pagination
+    function renderPagination() {
+        const totalPages = Math.ceil(eventsArray.length / eventsPerPage);
+        const pagination = $(".pagination");
+        pagination.empty(); // Clear previous pagination
+
+        // Previous Button
+        pagination.append(`
+        <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
+          <a class="page-link" href="#" data-page="${currentPage - 1}"><i class="bi bi-chevron-left"></i></a>
+        </li>
+      `);
+
+        // Page Numbers
+        for (let i = 1; i <= totalPages; i++) {
+            pagination.append(`
+          <li class="page-item ${i === currentPage ? "active" : ""}">
+            <a class="page-link" href="#" data-page="${i}">${i}</a>
+          </li>
+        `);
+        }
+
+        // Next Button
+        pagination.append(`
+        <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
+          <a class="page-link" href="#" data-page="${currentPage + 1}"><i class="bi bi-chevron-right"></i></a>
+        </li>
+      `);
+    }
+
+    // Event Listener for Pagination
+    $(document).on("click", ".page-link", function (e) {
+        e.preventDefault();
+        const page = parseInt($(this).data("page"));
+        if (!isNaN(page) && page > 0 && page <= Math.ceil(eventsArray.length / eventsPerPage)) {
+            currentPage = page;
+            renderEvents(currentPage);
+            renderPagination();
+        }
+    });
+
+    // Initial Render
+    $(document).ready(() => {
+        renderEvents(currentPage);
+        renderPagination();
+    });
+    // Paginated listing end 
+
 </script>
 
 </html>
