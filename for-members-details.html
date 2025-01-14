@@ -9,6 +9,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .calendar {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .calendar th,
+        .calendar td {
+            text-align: center;
+            vertical-align: middle;
+            height: 80px;
+            cursor: pointer;
+            color: #004684;
+        }
+
+        .calendar td.event-day {
+            background-color: #004684;
+            color: white;
+            position: relative;
+        }
+
+        .calendar td.event-day:hover {
+            background-color: #084298;
+        }
+
+        .calendar td.event-day .event-label {
+            font-size: 12px;
+            color: white;
+        }
+
+
+        .calendar td.disabled {
+            color: #adb5bd;
+        }
+
+        .event-details {
+            display: none;
+            border-radius: 6px;
+            background-color: #004684;
+            padding-inline: 32px;
+            padding-top: 29px;
+            padding-bottom: 65px;
+        }
+    </style>
 </head>
 
 <body>
@@ -135,113 +179,70 @@
             <img src="./assets/lees_voor.svg" alt="lees-voor">
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-4 col-12">
-                <div class="position-relative h-100"
-                    style="border: 1px solid #004684;padding-block: 27px;padding-inline: 25px; border-radius: 6px;background-color: #F5FBFF;">
-                    <p class="fw-bold" style="font-size: 22px;line-height: 30px;color: #004684;">Euregioraad</p>
-                    <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">Overview of Euregio council members
-                    </p>
-                    <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
-                        <div style="width: 9px;height: 23px;background-color: #004684;"></div>
-                        <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
-                        <img src="./assets/right-arrow.svg" alt="right-arrow">
-                    </div>
-                    <div class="position-absolute end-0"
-                        style="width: 12px;height: 97px;background-color: #004684;top:16px"></div>
+        <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;margin-bottom: 32px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+        </p>
+        <button class="text-white fw-semibold border-0 mt-4"
+            style="background-color: #004684; padding-inline: 25px;padding-block: 18px;border-radius: 50px;">
+            SEE OUR MEMBERS
+        </button>
+    </div>
 
+    <!-- Calender  -->
+    <div class="px-375" style="padding-block: 78px;background-color: #F8F8F8;">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="month-name" class="month-name fw-bold"
+                        style="color: #004684;font-size: 25px;line-height: 32px;">October</p>
                 </div>
+                <table class="calendar table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>Su</th>
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- Calendar days will be generated here by JavaScript -->
+                    </tbody>
+                </table>
             </div>
-            <div class="col-md-4 col-12">
-                <div class="position-relative h-100"
-                    style="border: 1px solid #004684;padding-block: 27px;padding-inline: 25px; border-radius: 6px;background-color: #F5FBFF;">
-                    <p class="fw-bold" style="font-size: 22px;line-height: 30px;color: #004684;">Commission for
-                        Cross-Border Understanding</p>
-                    <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">
-                        Composition of the Commission for Cross-Border Understanding
-                    </p>
+            <div class="col-md-4 mt-md-5 pt-md-5 ">
+                <div id="event-details" class="event-details position-relative">
+                    <h5 id="event-title" class="event-title text-white fw-bold"
+                        style="font-size: 22px;line-height: 30px;">Euregio Council meeting November 2024</h5>
+                    <p class="mt-3"><i class="bi bi-calendar-week text-white"></i> <span
+                            class="event-date text-white ms-2">17.12.24</span></p>
+                    <p class="text-white mb-1"><strong>Description:</strong></p>
+                    <p class="event-location text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
-                        <div style="width: 9px;height: 23px;background-color: #004684;"></div>
-                        <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
-                        <img src="./assets/right-arrow.svg" alt="right-arrow">
+                        <div class="bg-white" style="width: 9px;height: 23px;"></div>
+                        <p class="m-0 fw-semibold text-white">Read More</p>
+                        <img src="./assets/right-arrow-white.svg" alt="right-arrow">
                     </div>
-                    <div class="position-absolute end-0"
-                        style="width: 12px;height: 97px;background-color: #004684;top:16px"></div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="position-relative h-100"
-                    style="border: 1px solid #004684;padding-block: 27px;padding-inline: 25px; border-radius: 6px;background-color: #F5FBFF;">
-                    <p class="fw-bold" style="font-size: 22px;line-height: 30px;color: #004684;">Commission for Economic
-                        Affairs</p>
-                    <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">
-                        Composition of the Committee on Economic Affairs
-                    </p>
-                    <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
-                        <div style="width: 9px;height: 23px;background-color: #004684;"></div>
-                        <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
-                        <img src="./assets/right-arrow.svg" alt="right-arrow">
-                    </div>
-                    <div class="position-absolute end-0"
-                        style="width: 12px;height: 97px;background-color: #004684;top:16px"></div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="position-relative h-100"
-                    style="border: 1px solid #004684;padding-block: 27px;padding-inline: 25px; border-radius: 6px;background-color: #F5FBFF;">
-                    <p class="fw-bold" style="font-size: 22px;line-height: 30px;color: #004684;">Commission for Finance
-                        and Projects</p>
-                    <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">
-                        Composition of the Finance and Projects Committee
-                    </p>
-                    <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
-                        <div style="width: 9px;height: 23px;background-color: #004684;"></div>
-                        <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
-                        <img src="./assets/right-arrow.svg" alt="right-arrow">
-                    </div>
-                    <div class="position-absolute end-0"
-                        style="width: 12px;height: 97px;background-color: #004684;top:16px"></div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="position-relative h-100"
-                    style="border: 1px solid #004684;padding-block: 27px;padding-inline: 25px; border-radius: 6px;background-color: #F5FBFF;">
-                    <p class="fw-bold" style="font-size: 22px;line-height: 30px;color: #004684;">Executive Board</p>
-                    <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">
-                        Lorem Ipsum is simply dummy text of the printing
-                    </p>
-                    <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
-                        <div style="width: 9px;height: 23px;background-color: #004684;"></div>
-                        <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
-                        <img src="./assets/right-arrow.svg" alt="right-arrow">
-                    </div>
-                    <div class="position-absolute end-0"
-                        style="width: 12px;height: 97px;background-color: #004684;top:16px"></div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="position-relative h-100"
-                    style="border: 1px solid #004684;padding-block: 27px;padding-inline: 25px; border-radius: 6px;background-color: #F5FBFF;">
-                    <p class="fw-bold" style="font-size: 22px;line-height: 30px;color: #004684;">Contacts</p>
-                    <p class="fw-medium" style="color: #6F6F6F;line-height: 28px;">
-                        Contacts overview
-                    </p>
-                    <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
-                        <div style="width: 9px;height: 23px;background-color: #004684;"></div>
-                        <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
-                        <img src="./assets/right-arrow.svg" alt="right-arrow">
-                    </div>
-                    <div class="position-absolute end-0"
-                        style="width: 12px;height: 97px;background-color: #004684;top:16px"></div>
+                    <img src="./assets/Polygon.svg" alt="Polygon" style="position: absolute;top:5px;left: -10px;">
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    <!-- Calender end -->
 
     <!-- foot section  -->
     <div class="" style="padding: 61px 375px 91px;background-color: #002749;">
@@ -305,5 +306,75 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 </body>
+
+<script>
+    // Calender logics start 
+    const events = {
+        '2025-01-17': {
+            title: 'Lorem Ipsum is simply dummy',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        }
+
+    };
+
+    $(document).ready(function () {
+        const today = new Date();
+        let currentMonth = today.getMonth();
+        let currentYear = today.getFullYear();
+
+        function renderCalendar(month, year) {
+            const firstDay = new Date(year, month).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const daysInPrevMonth = new Date(year, month, 0).getDate();
+            const calendarBody = $('#calendar-body');
+            calendarBody.empty();
+
+            let date = 1;
+            let nextMonthDate = 1;
+            for (let i = 0; i < 6; i++) {
+                const row = $('<tr></tr>');
+                for (let j = 0; j < 7; j++) {
+                    const cell = $('<td class="fw-bold"></td>');
+
+                    if (i === 0 && j < firstDay) {
+                        const prevDate = daysInPrevMonth - firstDay + j + 1;
+                        cell.text(prevDate).addClass('disabled');
+                    } else if (date > daysInMonth) {
+                        cell.text(nextMonthDate++).addClass('disabled');
+                    } else {
+                        const formattedDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(date).padStart(2, '0')}`;
+                        cell.text(date);
+
+                        if (events[formattedDate]) {
+                            cell.addClass('event-day');
+                            cell.append('<div class="event-label fw-normal">Event Day</div>');
+                            cell.click(() => showEventDetails(formattedDate));
+                        }
+
+                        date++;
+                    }
+
+                    row.append(cell);
+                }
+                calendarBody.append(row);
+            }
+
+            $('#month-name').text(new Date(year, month).toLocaleString('default', { month: 'long' }));
+        }
+
+        function showEventDetails(date) {
+            const event = events[date];
+            if (event) {
+                $('.event-title').text(event.title);
+                $('.event-date').text(date);
+                $('.event-description').text(event.description);
+                $('.event-details').fadeIn();
+            }
+        }
+
+        renderCalendar(currentMonth, currentYear);
+    });
+    // calendar logics end
+</script>
 
 </html>
