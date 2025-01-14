@@ -3,4 +3,9 @@ $(document).ready(function() {
         e.preventDefault();
         window.location.href = '/contact.html';
     });
+
+    $('.back-to-news').click(function(e) {
+        e.preventDefault();
+        window.location.href = '/news.html';
+    });
 });

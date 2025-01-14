@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euregio Rhein - Waal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .pagination {
+            font-size: 14px;
+            font-weight: bold;
+            color: #6F6F6F;
+        }
+
+        .pagination .page-item .page-link {
+            color: #6F6F6F;
+            padding: 10px 16px;
+            border: 1px solid #D4E6F3;
+            margin: 0 4px;
+            border-radius: 50px;
+            background-color: #D8D8D8;
+            transition: all 0.3s ease-in-out;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #004684;
+            color: white;
+            border: none;
+        }
+
+        .pagination .page-item .page-link:hover {
+            background-color: #D4E6F3;
+            color: #004684;
+            text-decoration: none;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #C2C2C2;
+            pointer-events: none;
+            background-color: #F5F5F5;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-color: #F5F5F5; padding-inline: 375px;"
+        class="py-3 d-flex justify-content-between align-items-center">
+        <span>
+            <span class="text-decoration-underline fw-semibold" style="color: #004684; line-height: 21.79px;">A</span>
+            <span class="fw-semibold " style="color: #004684;font-size: 20px;line-height: 27.24px;">A</span>
+            <span class="fw-semibold " style="color: #004684;font-size: 24px;line-height: 32.68px;">A</span>
+        </span>
+
+        <div class="d-flex gap-3">
+            <span class="fw-semibold" style="color: #6F6F6F;line-height: 21.79px;">Language :</span>
+            <img src="./assets/image 1.svg" alt="flag-1" style="height: 23px; width: 23px;">
+            <img src="./assets/image 2.svg" alt="flag-2" style="height: 23px; width: 23px;">
+            <img src="./assets/image 3.svg" alt="flag-3" style="height: 23px; width: 23px;">
+        </div>
+
+    </div>
+
+    <div class="py-2 d-flex justify-content-between align-items-center" style="padding-inline: 375px;">
+        <img src="./assets/logo.svg" alt="logo">
+        <div class="d-flex align-items-center">
+
+            <div class="d-flex gap-2">
+                <span class="d-flex justify-content-center align-items-center"
+                    style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                    <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                </span>
+                <span class="d-flex justify-content-center align-items-center"
+                    style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                    <img src="./assets/insta.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                </span>
+                <span class="d-flex justify-content-center align-items-center"
+                    style="background-color:#004684 ;height: 32px; width: 32px; border-radius: 50%;">
+                    <img src="./assets/linkedIn.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                </span>
+            </div>
+
+
+            <div class="container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" aria-label="Search"
+                        style="::placeholder { color: #6F6F6F;font-weight: 500; }">
+                    <button class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-custom" style="padding-block: 0px;padding-inline: 375px;">
+        <div class="container px-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex gap-4 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Our Mission</a></li>
+                            <li><a class="dropdown-item" href="#">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cooperationDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cooperation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cooperationDropdown">
+                            <li><a class="dropdown-item" href="#">Partners</a></li>
+                            <li><a class="dropdown-item" href="#">Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="subsidyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Subsidy
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="subsidyDropdown">
+                            <li><a class="dropdown-item" href="#">Eligibility</a></li>
+                            <li><a class="dropdown-item" href="#">Application</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            School Competition
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
+                            <li><a class="dropdown-item" href="#">Details</a></li>
+                            <li><a class="dropdown-item" href="#">Registration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-contact fw-semibold text-white"
+                    style="padding: 18px 30px;text-transform: uppercase;">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center position-relative" style="padding-inline: 375px; background-color: #002749; padding-block: 50px; 
+            background-image: url('./assets/bg_img.png'); 
+            background-repeat: repeat;
+            background-size: auto;
+            background-position: 0 0, 0px 20px;">
+        <p class="fw-bold text-white" style="font-size: 45px;line-height: 76px;">News</p>
+    </div>
+
+    <div class="px-375" style="padding-top: 33px;padding-bottom: 100px;">
+        <div class="d-flex justify-content-md-end justify-content-start mb-5">
+            <img src="./assets/lees_voor.svg" alt="lees-voor">
+        </div>
+
+        <div
+            style="background-color: #D4E6F3;padding-block: 32px;padding-inline: 39px;margin-bottom: 40px;border-radius: 6px;">
+            <div class="d-flex flex-wrap align-items-center justify-content-md-end justify-content-start gap-3">
+                <p class="text-uppercase m-md-0" style="color: #002749;">Choose news Category wise:</p>
+                <select class="form-select"
+                    style="max-width: 429px;height: 60px;color: #6F6F6F;padding-inline: 26px;border-radius: 6px;">
+                    <option value="" disabled selected>Show all news</option>
+                    <option class="text-secondary" value="first-news">First News</option>
+                    <option class="text-secondary" value="second-news">Second News</option>
+                    <option class="text-secondary" value="third-news">Third News</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-4 news-container" style="padding-top: 60px;">
+            <!-- news 1  -->
+            <div class="col-md-6 col-12">
+                <div style="border-radius: 6px;" class="overflow-hidden d-flex">
+                    <div style="width: 217px;height: 100%;">
+                        <img src="./assets/news1.svg" alt="project-1-img">
+                    </div>
+                    <div style="background-color: #F6F6F6;padding-top: 21px;padding-inline: 31px;padding-bottom: 38px;">
+                        <div class="d-flex gap-2">
+                            <i class="bi bi-calendar2-week" style="color: #6F6F6F;"></i>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">25.11.2024</p>
+                        </div>
+                        <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">Lorem Ipsum is
+                            simply dummy</p>
+                        <p class="fw-medium" style="line-height: 28px;">Lorem Ipsum has been the industry's standard
+                            dummy text.</p>
+                        <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
+                            <div style="width: 9px;height: 23px;background-color: #004684;"></div>
+                            <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
+                            <img src="./assets/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="d-flex justify-content-center" style="margin-top:54px;">
+            <ul class="pagination"></ul>
+        </nav>
+
+    </div>
+
+    <!-- foot section  -->
+    <div class="" style="padding: 61px 375px 91px;background-color: #002749;">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+                <p class="text-white fs-medium mb-5" style="font-size: 18px;line-height: 28px;">ADDRESS</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Euregio Rhine-Waal</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Emmericher Straße 24</p>
+                <p class="fw-medium" style="color: #C2C2C2;">47533 Kleve</p>
+            </div>
+            <div class="d-flex flex-column">
+                <p class="text-white fs-medium mb-5" style="font-size: 18px;line-height: 28px;">CONTACT</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Tel: +49 (0) 2821 7930 0</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Fax: +49 (0) 2821 7930 30</p>
+                <p class="fw-medium" style="color: #C2C2C2;">E-mail: info(at)euregio.org</p>
+                <div class="d-flex gap-2">
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#3B5998 ;height: 32px; width: 32px;cursor:pointer;">
+                        <img src="./assets/fb.svg" alt="facebook-icon" style="height: 14px; width: 14px;">
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#515BD4 ;height: 32px; width: 32px;cursor:pointer;">
+                        <img src="./assets/insta.svg" alt="instagram-icon" style="height: 14px; width: 14px;">
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center"
+                        style="background-color:#007BB6 ;height: 32px; width: 32px;cursor:pointer;">
+                        <img src="./assets/linkedIn.svg" alt="linkedin-icon" style="height: 14px; width: 14px;">
+                    </span>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <span class="mb-5"></span>
+                <p class="fw-medium mt-2" style="color: #C2C2C2;">Colophon</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Disclaimer</p>
+                <p class="fw-medium" style="color: #C2C2C2;">Data protection</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright  -->
+    <div class="d-flex justify-content-center align-items-center"
+        style="background-color: #004684;padding-block: 16px;">
+        <span class="text-white" style="font-size: 14px;line-height: 24px;">Copyright © 2024 Euregio - All rights
+            reserved.</span>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+<script>
+    // Mock Data for Events
+    const news = Array.from({ length: 31 }, (_, i) => ({
+        date: "25.11.2024",
+        title: `Event Title ${i + 1}`,
+        description: "Lorem Ipsum has been the industry's standard dummy text.",
+        image: "https://via.placeholder.com/300x200",
+    }));
+
+    const eventsPerPage = 6;
+    let currentPage = 1;
+
+    // Function to render events
+    function renderEvents(page) {
+        const startIndex = (page - 1) * eventsPerPage;
+        const endIndex = startIndex + eventsPerPage;
+        const eventsToShow = news.slice(startIndex, endIndex);
+
+        const container = $(".news-container");
+        container.empty(); // Clear previous events
+
+        eventsToShow.forEach((event) => {
+            container.append(`
+          <div class="col-md-6 col-12">
+                <div style="border-radius: 6px;" class="overflow-hidden d-flex">
+                    <div style="width: 217px;height: 100%;">
+                        <img src="./assets/news1.svg" alt="project-1-img">
+                    </div>
+                    <div style="background-color: #F6F6F6;padding-top: 21px;padding-inline: 31px;padding-bottom: 38px;">
+                        <div class="d-flex gap-2">
+                            <i class="bi bi-calendar2-week" style="color: #6F6F6F;"></i>
+                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">25.11.2024</p>
+                        </div>
+                        <p class="fw-bold" style="font-size: 18px;line-height: 28px;color: #004684;">Lorem Ipsum is
+                            simply dummy</p>
+                        <p class="fw-medium" style="line-height: 28px;">Lorem Ipsum has been the industry's standard
+                            dummy text.</p>
+                        <div class="d-flex gap-2 align-items-center" style="cursor: pointer;">
+                            <div style="width: 9px;height: 23px;background-color: #004684;"></div>
+                            <p class="m-0 fw-semibold" style="color: #004684;">Read More</p>
+                            <img src="./assets/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+        });
+    }
+
+    // Function to render pagination
+    function renderPagination() {
+        const totalPages = Math.ceil(news.length / eventsPerPage);
+        const pagination = $(".pagination");
+        pagination.empty(); // Clear previous pagination
+
+        // Previous Button
+        pagination.append(`
+        <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
+          <a class="page-link" href="#" data-page="${currentPage - 1}"><i class="bi bi-chevron-left"></i></a>
+        </li>
+      `);
+
+        // Page Numbers
+        for (let i = 1; i <= totalPages; i++) {
+            pagination.append(`
+          <li class="page-item ${i === currentPage ? "active" : ""}">
+            <a class="page-link" href="#" data-page="${i}">${i}</a>
+          </li>
+        `);
+        }
+
+        // Next Button
+        pagination.append(`
+        <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
+          <a class="page-link" href="#" data-page="${currentPage + 1}"><i class="bi bi-chevron-right"></i></a>
+        </li>
+      `);
+    }
+
+    // Event Listener for Pagination
+    $(document).on("click", ".page-link", function (e) {
+        e.preventDefault();
+        const page = parseInt($(this).data("page"));
+        if (!isNaN(page) && page > 0 && page <= Math.ceil(news.length / eventsPerPage)) {
+            currentPage = page;
+            renderEvents(currentPage);
+            renderPagination();
+        }
+    });
+
+    // Initial Render
+    $(document).ready(() => {
+        renderEvents(currentPage);
+        renderPagination();
+    });
+</script>
+
+</html>
