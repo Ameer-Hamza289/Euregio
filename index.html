@@ -21,8 +21,10 @@
             <span>
                 <span tabindex="0" class="text-decoration-underline fw-semibold font-size-100"
                     style="color: #004684; line-height: 21.79px;cursor: pointer;">A</span>
-                <span tabindex="0" class="fw-semibold font-size-150" style="color: #004684;line-height: 27.24px;cursor: pointer;">A</span>
-                <span tabindex="0" class="fw-semibold font-size-200" style="color: #004684;line-height: 32.68px;cursor: pointer;">A</span>
+                <span tabindex="0" class="fw-semibold font-size-150"
+                    style="color: #004684;line-height: 27.24px;cursor: pointer;">A</span>
+                <span tabindex="0" class="fw-semibold font-size-200"
+                    style="color: #004684;line-height: 32.68px;cursor: pointer;">A</span>
             </span>
             <div class="d-flex gap-md-5 gap-2">
                 <span class="fw-semibold" style="color: #6F6F6F;line-height: 21.79px;">Language :</span>
@@ -38,7 +40,7 @@
             <div class="navbar-icons d-flex align-items-center">
                 <div class="d-md-flex d-none gap-2 pe-4">
                     <span tabindex="0" class="icon-wrapper">
-                        <img  src="./assets/fb.svg" alt="facebook-icon" class="icon-image">
+                        <img src="./assets/fb.svg" alt="facebook-icon" class="icon-image">
                     </span>
                     <span tabindex="0" class="icon-wrapper">
                         <img src="./assets/insta.svg" alt="instagram-icon" class="icon-image">
@@ -127,7 +129,6 @@
                     <img src="./assets/1.jpg" class="d-block w-100 carousel-img" alt="First slide">
                     <div class="carousel-caption">
                         <h1 class="pb-2">Welcome to the Rhine-Waal</h1>
-                        <!-- <h1 class="pb-2">Euroregion</h1> -->
                         <button class="btn btn-primary">LEARN MORE</button>
                     </div>
                 </div>
@@ -146,8 +147,8 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev d-none d-md-flex" tabindex="0" type="button" data-bs-target="#customCarousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev d-none d-md-flex" tabindex="0" type="button"
+                data-bs-target="#customCarousel" data-bs-slide="prev">
                 <span
                     class="carousel-control-prev-icon d-flex justify-content-center align-items-center home-carousel-prev""
                     aria-hidden=" true">
@@ -173,7 +174,7 @@
                 <img src="./assets/lees_voor.svg" alt="lees_voor" style="cursor: pointer;">
             </div>
             <div class="container mt-md-4 p-0">
-                <div class="row g-2 overflow-x-scroll home-cards-list flex-nowrap" >
+                <div class="row g-2 overflow-x-scroll home-cards-list flex-nowrap">
                     <div class="col-md-3 col-10">
                         <div class="custom-card position-relative">
                             <p class="fw-semibold mb-3 fs-18" style="text-transform: uppercase;">Voor Leden</p>
@@ -232,136 +233,263 @@
                 </div>
             </div>
         </div>
-        </div>
 
 
 
 
         <!-- news & events  -->
-        <div class="d-flex px-375" style="background-color: #002749;padding-block: 79px;gap: 66px;">
+        <div class="row px-375 m-0 overflow-hidden" style="background-color: #002749;padding-block: 79px;">
             <!-- news  -->
-            <div class="">
+            <div class="col-md-6 col-12">
                 <p class="fw-bold text-white" style="font-size: 55px;line-height: 54px; margin-bottom: 60px;">Nieuws</p>
-                <div class="d-flex flex-column" style="gap: 40px;">
-                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
-                        <div>
-                            <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-column w-100" style="gap: 40px;">
+                                <!-- Card 1 -->
+                                <div class="d-flex overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <p class="fw-bold fs-18" style="line-height: 28px;color: #004684;">EMOJI Bicycle
+                                            & Handbike 3-day event</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful
+                                            multi-day tour by bike or handbike!</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18"
+                                                style="color: #004684;">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="d-lg-flex d-none  overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <p class="fw-bold fs-18" style="line-height: 28px;color: #004684;">EMOJI Bicycle
+                                            & Handbike 3-day event</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful
+                                            multi-day tour by bike or handbike!</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18"
+                                                style="color: #004684;">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="bg-white p-4">
-                            <p class="fw-bold fs-18" style="line-height: 28px;color: #004684;">EMOJI Bicycle &
-                                Handbike 3-day event</p>
-                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful multi-day tour by
-                                bike or handbike!</p>
-                            <div class="d-flex gap-2 align-items-center">
-                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
-                                <a href="#" style="line-height: 28px;color: #004684;"
-                                    class="text-decoration-none fw-semibold">Lees meer</a>
-                                <a href="#" class="text-decoration-none fs-18" >&rarr;</a>
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column w-100" style="gap: 40px;">
+                                <!-- Card 1 -->
+                                <div class="d-flex overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <p class="fw-bold fs-18" style="line-height: 28px;color: #004684;">EMOJI Bicycle
+                                            & Handbike 3-day event</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful
+                                            multi-day tour by bike or handbike!</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18"
+                                                style="color: #004684;">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="d-lg-flex d-none overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <p class="fw-bold fs-18" style="line-height: 28px;color: #004684;">EMOJI Bicycle
+                                            & Handbike 3-day event</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful
+                                            multi-day tour by bike or handbike!</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18"
+                                                style="color: #004684;">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
-                        <div>
-                            <img src="./assets/news_image.svg" alt="news-image" style="height: 100%;">
+                    <!-- Controls -->
+                    <div class="d-flex justify-content-between align-items-center mb-md-0 mb-5 position-relative"
+                        style="margin-top: 55px;">
+                        <div class="d-flex gap-3">
+                            <button
+                                class="carousel-control-prev cursor-pointer d-flex justify-content-center align-items-center"
+                                type="button" data-bs-target="#newsCarousel" data-bs-slide="prev" tabindex="0"
+                                style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
+                                <i class="bi bi-arrow-left text-white" style="font-size: 30px;"></i>
+                            </button>
+                            <button
+                                class="carousel-control-next cursor-pointer d-flex justify-content-center align-items-center"
+                                type="button" data-bs-target="#newsCarousel" data-bs-slide="next" tabindex="0"
+                                style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);left: 75px;">
+                                <i class="bi bi-arrow-right text-white" style="font-size: 30px;"></i>
+                            </button>
                         </div>
-                        <div class="bg-white p-4">
-                            <p class="fw-bold fs-18" style="line-height: 28px;color: #004684;">EMOJI Bicycle &
-                                Handbike 3-day event</p>
-                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;">A beautiful multi-day tour by
-                                bike or handbike!</p>
-                            <div class="d-flex gap-2 align-items-center">
-                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
-                                <a href="#" style="line-height: 28px;color: #004684;"
-                                    class="text-decoration-none fw-semibold">Lees meer</a>
-                                <a href="#" class="text-decoration-none fs-18" >&rarr;</a>
-                            </div>
-                        </div>
+                        <p class="fw-semibold text-white">Bekijk alle artikelen</p>
                     </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 55px;">
-                    <div class="d-flex gap-3">
-                        <div class="d-flex justify-content-center align-items-center"
-                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
-                            <i class="bi bi-arrow-left text-white" style="font-size: 30px;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center"
-                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
-                            <i class="bi bi-arrow-right text-white" style="font-size: 30px;"></i>
-                        </div>
-                    </div>
-                    <p class="fw-semibold text-white">Bekijk alle artikelen</p>
                 </div>
             </div>
 
             <!-- events  -->
-            <div class="">
-                <div class="d-flex align-items-center justify-content-between" style=" margin-bottom: 60px;">
+            <div class="col-md-6 col-12">
+                <div class="d-flex flex-wrap align-items-center justify-content-between" style=" margin-bottom: 60px;">
                     <p class="fw-bold text-white mb-0" style="font-size: 55px;line-height: 54px;">Events</p>
                     <img src="./assets/lees_voor.svg" alt="lees-voor" style="cursor: pointer;">
                 </div>
-                <div class="d-flex flex-column" style="gap: 40px;">
-                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
-                        <div>
-                            <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-column w-100" style="gap: 40px;">
+                                <!-- Card 1 -->
+                                <div class="d-flex overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <span class="" style="margin-bottom: 14px;">
+                                            <i class="bi bi-calendar"></i>
+                                            <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
+                                        </span>
+                                        <p class="fw-bold mt-1 fs-18" style="line-height: 28px;color: #004684;">
+                                            Consultation hours for cross-border commuters</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29
+                                            October
+                                            2024...</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="d-lg-flex d-none  overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <span class="" style="margin-bottom: 14px;">
+                                            <i class="bi bi-calendar"></i>
+                                            <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
+                                        </span>
+                                        <p class="fw-bold mt-1 fs-18" style="line-height: 28px;color: #004684;">
+                                            Consultation hours for cross-border commuters</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29
+                                            October
+                                            2024...</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="bg-white p-4">
-                            <span class="" style="margin-bottom: 14px;">
-                                <i class="bi bi-calendar"></i>
-                                <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
-                            </span>
-                            <p class="fw-bold mt-1 fs-18" style="line-height: 28px;color: #004684;">
-                                Consultation hours for cross-border commuters</p>
-                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29 October
-                                2024...</p>
-                            <div class="d-flex gap-2 align-items-center">
-                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
-                                <a href="#" style="line-height: 28px;color: #004684;"
-                                    class="text-decoration-none fw-semibold">Lees meer</a>
-                                <a href="#" class="text-decoration-none fs-18" >&rarr;</a>
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column w-100" style="gap: 40px;">
+                                <!-- Card 1 -->
+                                <div class="d-flex overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <span class="" style="margin-bottom: 14px;">
+                                            <i class="bi bi-calendar"></i>
+                                            <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
+                                        </span>
+                                        <p class="fw-bold mt-1 fs-18" style="line-height: 28px;color: #004684;">
+                                            Consultation hours for cross-border commuters</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29
+                                            October
+                                            2024...</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="d-lg-flex d-none overflow-hidden w-100" style="border-radius: 10px;">
+                                    <div>
+                                        <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                                    </div>
+                                    <div class="bg-white p-4 flex-grow-1">
+                                        <span class="" style="margin-bottom: 14px;">
+                                            <i class="bi bi-calendar"></i>
+                                            <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
+                                        </span>
+                                        <p class="fw-bold mt-1 fs-18" style="line-height: 28px;color: #004684;">
+                                            Consultation hours for cross-border commuters</p>
+                                        <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29
+                                            October
+                                            2024...</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div style="height: 23px;width: 9px;background-color: #004684;"></div>
+                                            <a href="#" style="line-height: 28px;color: #004684;"
+                                                class="text-decoration-none fw-semibold">Lees meer</a>
+                                            <a href="#" class="text-decoration-none fs-18">&rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="d-flex overflow-hidden" style="border-radius: 10px;max-width: 549px;">
-                        <div>
-                            <img src="./assets/event_image.svg" alt="news-image" style="height: 100%;">
+                    <!-- Controls -->
+                    <div class="d-flex justify-content-between align-items-center mb-md-0 mb-5 position-relative"
+                        style="margin-top: 55px;">
+                        <div class="d-flex gap-3">
+                            <button
+                                class="carousel-control-prev cursor-pointer d-flex justify-content-center align-items-center"
+                                type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev" tabindex="0"
+                                style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
+                                <i class="bi bi-arrow-left text-white" style="font-size: 30px;"></i>
+                            </button>
+                            <button
+                                class="carousel-control-next cursor-pointer d-flex justify-content-center align-items-center"
+                                type="button" data-bs-target="#eventsCarousel" data-bs-slide="next" tabindex="0"
+                                style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);left: 75px;">
+                                <i class="bi bi-arrow-right text-white" style="font-size: 30px;"></i>
+                            </button>
                         </div>
-                        <div class="bg-white p-4">
-                            <span class="" style="margin-bottom: 14px;">
-                                <i class="bi bi-calendar"></i>
-                                <span class="fw-semibold" style="color: #6F6F6F;">29.10.2024</span>
-                            </span>
-                            <p class="fw-bold mt-1 fs-18" style="line-height: 28px;color: #004684;">
-                                Consultation hours for cross-border commuters</p>
-                            <p class="fw-medium" style="line-height: 28px;color: #6F6F6F;"> On Tuesday 29 October
-                                2024...</p>
-                            <div class="d-flex gap-2 align-items-center">
-                                <div style="height: 23px;width: 9px;background-color: #004684;"></div>
-                                <a href="#" style="line-height: 28px;color: #004684;"
-                                    class="text-decoration-none fw-semibold">Lees meer</a>
-                                <a href="#" class="text-decoration-none fs-18" >&rarr;</a>
-                            </div>
-                        </div>
+                        <p class="fw-semibold text-white">Bekijk alle artikelen</p>
                     </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 55px;">
-                    <div class="d-flex gap-3">
-                        <div class="d-flex justify-content-center align-items-center"
-                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
-                            <i class="bi bi-arrow-left text-white" style="font-size: 30px;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center"
-                            style="height: 60px;width: 60px;border: 1px solid white;border-radius: 50%;background-color: rgba(255,255,255,0.2);">
-                            <i class="bi bi-arrow-right text-white" style="font-size: 30px;"></i>
-                        </div>
-                    </div>
-                    <p class="fw-semibold text-white">Bekijk alle artikelen</p>
                 </div>
             </div>
         </div>
+
+
 
         <!-- GreenZInfo  -->
 
@@ -429,9 +557,6 @@
                     <div class="d-md-block d-none col-lg-6 text-center mt-4 mt-lg-0 ">
                         <img src="./assets/first.svg" alt="first-image" class="img-fluid ">
                     </div>
-
-
-
                 </div>
             </div>
 
@@ -441,8 +566,8 @@
                     <img src="./assets/second.svg" alt="second-image" class="img-fluid">
                 </div>
                 <div class="col-lg-6 text-start px-4">
-                    <!-- The content inside here -->
-                    <h2 class="fw-bold mb-3 text-start mt-md-0 mt-4" style="font-size: 1.75rem; line-height: 2.5rem;color:#004684;">
+                    <h2 class="fw-bold mb-3 text-start mt-md-0 mt-4"
+                        style="font-size: 1.75rem; line-height: 2.5rem;color:#004684;">
                         Belangenbeharteging
                     </h2>
                     <p class="fw-medium my-3 text-start" style="line-height: 1.8;color: #6F6F6F;">
@@ -465,7 +590,7 @@
 
 
         </div>
-        </div>
+
 
 
         <!-- contact banner  -->
