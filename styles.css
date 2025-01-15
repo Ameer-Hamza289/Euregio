@@ -465,7 +465,7 @@ body {
         padding-inline: 1.25rem;
     }
     .carousel-indicators{
-        bottom: 5rem;
+        bottom: 4rem;
     }
     .cards-listing{
         transform: translateY(-50px);
@@ -552,7 +552,7 @@ body {
 
 @media (max-width: 768px) {
     .carousel-img {
-        height: 50vh !important;
+        height: 75vh !important;
         /* Reduce height on smaller screens */
     }
 
