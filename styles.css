@@ -234,7 +234,7 @@ span,div {
 }
 
 .arrow:hover{
-    right: 1.5rem;
+    right: 2rem;
     transition: 0.3s ease-out;
 }
 
@@ -301,6 +301,12 @@ span,div {
     overflow-x: scroll;
     scrollbar-width: none;
 
+}
+
+@media (min-width:1280px) and  (max-width: 1645px) {
+    .logo-wrapper {
+        justify-content: center;
+    }
 }
 
 .logo-wrapper .logo {
