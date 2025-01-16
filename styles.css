@@ -219,7 +219,8 @@ div {
 
 .custom-card p {
     margin-bottom: 1.25rem;
-    font-size: 14px;
+    /* font-size: 14px; */
+    line-height: 1.75rem;
 
 }
 
