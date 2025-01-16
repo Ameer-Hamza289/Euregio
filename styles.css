@@ -3,7 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    /* font-size: 16px; */
     transition: font-size 0.3s ease;
 }
 
@@ -33,7 +33,7 @@ div {
 } */
 
 .px-375 {
-    padding-inline: 23.4375rem;
+    padding-inline: 375px;
 }
 
 .navbar-container {
@@ -54,14 +54,14 @@ div {
 @media (max-width: 768px) {
     .navbar-logo {
         max-height: 5rem;
-        width: 15rem;
+        width: 10rem;
     }
 }
 
 @media (max-width: 480px) {
     .navbar-logo {
         max-height: 4rem;
-        width: 12rem;
+        width: 9rem;
     }
 }
 
@@ -80,6 +80,11 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-wrapper .icon-image{
+    height: 1rem;
+    width: 1rem;
 }
 
 
@@ -140,8 +145,8 @@ div {
     border-radius: 0;
     margin: 0%;
     min-height: 3.5rem;
-    width: 10rem;
-
+    min-width: 10rem;
+    border: none;
 
 }
 
@@ -464,7 +469,7 @@ div {
 
 @media screen and (max-width: 1645px) {
     .px-375 {
-        padding-inline: 1.875rem;
+        padding-inline: 1.875rem !important;
     }
 
     .carousel-caption h1 {
@@ -492,7 +497,7 @@ div {
 
 @media screen and (max-width: 768px) {
     .px-375 {
-        padding-inline: 1.25rem;
+        padding-inline: 1.25rem !important;
     }
 
     .carousel-indicators {
