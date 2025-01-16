@@ -19,18 +19,18 @@
         <!-- Top Line  -->
         <div style="background-color: #F5F5F5;" class="py-3 d-flex justify-content-between align-items-center px-375">
             <span>
-                <span tabindex="0" class="text-decoration-underline fw-semibold font-size-100"
+                <span tabindex="0" class="fw-semibold font-size-100 active-font"
                     style="color: #004684; line-height: 21.79px;cursor: pointer;">A</span>
                 <span tabindex="0" class="fw-semibold font-size-150"
                     style="color: #004684;line-height: 27.24px;cursor: pointer;">A</span>
                 <span tabindex="0" class="fw-semibold font-size-200"
                     style="color: #004684;line-height: 32.68px;cursor: pointer;">A</span>
             </span>
-            <div class="d-flex gap-md-5 gap-2">
+            <div class="d-flex gap-md-2 gap-2">
                 <span class="fw-semibold" style="color: #6F6F6F;line-height: 21.79px;">Language :</span>
-                <img tabindex="0" src="./assets/image 1.svg" alt="flag-1" style="height: 23px; width: 23px;">
-                <img tabindex="0" src="./assets/image 2.svg" alt="flag-2" style="height: 23px; width: 23px;">
-                <img tabindex="0" src="./assets/image 3.svg" alt="flag-3" style="height: 23px; width: 23px;">
+                <img tabindex="0" src="./assets/image 1.svg" alt="flag-1" style="height: 1.438rem; width: 1.438rem;">
+                <img tabindex="0" src="./assets/image 2.svg" alt="flag-2" style="height: 1.438rem; width: 1.438rem;">
+                <img tabindex="0" src="./assets/image 3.svg" alt="flag-3" style="height: 1.438rem; width: 1.438rem;">
             </div>
         </div>
         <!--Before Navbar  -->
@@ -75,34 +75,105 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-4 me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mega-menu position-static">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown">About Us</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Our Mission</a></li>
-                                <li><a class="dropdown-item" href="#">Team</a></li>
-                            </ul>
+                                data-bs-toggle="dropdown">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu px-375" aria-labelledby="aboutDropdown">
+                                <div class="row">
+                                    <div class="col-md-5 ps-md-5" style="padding-top: 5.875rem;">
+                                        <div class="mega-menu-about">
+                                            <p class="text-uppercase" style="color: #6F6F6F;">About Us</p>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="departments.html">Organizational
+                                                        Structure</a></li>
+                                                <li><a class="dropdown-item" href="projects.html">Area of Work</a></li>
+                                                <li><a class="dropdown-item" href="memebers.html">Members</a></li>
+                                                <li><a class="dropdown-item" href="#">Euregio Team</a></li>
+                                                <li><a class="dropdown-item" href="#">Euregio Ambassadors</a></li>
+                                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                                                <li><a class="dropdown-item" href="login.html">Euregio Forum</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" style="padding-bottom: 4.938rem;">
+                                        <div class="text-md-end" style="padding-block: 2.313rem 1.5rem;">
+                                            <img src="./assets/lees_voor.svg" alt="lees_voor">
+                                        </div>
+                                        <div
+                                            style="background-color: #C9E5FD;padding: 1.438rem 1.188rem 2.563rem;border-radius: 6px;">
+                                            <p class="fw-semibold text-uppercase" style="margin-bottom: 15px;">Downloads
+                                                </h6>
+                                            <div class=" rounded">
+                                                <ul class="list-unstyled">
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">
+                                                            Strategische Agenda 2025+
+                                                        </a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">
+                                                            Europaregional Mobiliteitsplan
+                                                        </a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">Impressions 2023</a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">
+                                                            Euregio Rijn-Waal in cijfers 2019
+                                                        </a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">Statuten</a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">Begroting 2020</a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2">
+                                                        &rarr;
+                                                        <a class="dropdown-item" href="#">Begroting 2021</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="cooperationDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Cooperation</a>
-                            <ul class="dropdown-menu" aria-labelledby="cooperationDropdown">
+                                data-bs-toggle="dropdown">
+                                Cooperation
+                            </a>
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Partners</a></li>
                                 <li><a class="dropdown-item" href="#">Opportunities</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="subsidyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Subsidy</a>
-                            <ul class="dropdown-menu" aria-labelledby="subsidyDropdown">
+                                data-bs-toggle="dropdown">
+                                Subsidy
+                            </a>
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Eligibility</a></li>
                                 <li><a class="dropdown-item" href="#">Application</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">School Competition</a>
-                            <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
+                                data-bs-toggle="dropdown">
+                                School Competition
+                            </a>
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Details</a></li>
                                 <li><a class="dropdown-item" href="#">Registration</a></li>
                             </ul>
@@ -174,12 +245,12 @@
                 <img src="./assets/lees_voor.svg" alt="lees_voor" style="cursor: pointer;">
             </div>
             <div class="container mt-md-4 p-0">
-                <div class="row g-2 overflow-x-scroll home-cards-list flex-nowrap">
+                <div class="row g-2 overflow-x-scroll home-cards-list flex-nowrap" style="font-size: inherit;">
                     <div class="col-md-3 col-10">
-                        <div class="custom-card position-relative">
-                            <p class="fw-semibold mb-3 fs-18" style="text-transform: uppercase;">Voor Leden</p>
+                        <div class="custom-card position-relative fs-18">
+                            <p class="fw-semibold mb-3" style="text-transform: uppercase;">Voor Leden</p>
                             <hr>
-                            <p style="line-height: 28px;margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur
+                            <p>Lorem ipsum dolor sit amet, consectetur
                                 adipiscing
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                             <div class="d-flex justify-content-end">
@@ -603,8 +674,7 @@
                 Embark on an exhilarating journey with endless possibilities. Let's dive into your project!
             </p>
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <p class="text-white text-center text-md-start"
-                    style="line-height: 1.6; font-size: 1rem; margin-bottom: 20px;">
+                <p class="text-white text-center text-md-start" style="line-height: 1.6; margin-bottom: 20px;">
                     We support many and diverse cross-border activities in the German-Dutch border area.
                 </p>
                 <button class="fw-semibold bg-white text-uppercase text-center"
@@ -618,11 +688,11 @@
         <!-- companies  -->
         <div class="members-section mt-5 ">
             <div class="d-flex justify-content-center align-items-center mb-5"
-                style="position: relative; flex-direction: row;">
+                style="position: relative; flex-direction: row;font-size: inherit;">
 
                 <!-- Text Section -->
-                <h3 class="me-2 fw-bold fs-18" style="line-height: 25px; margin: 0;">Mede mogelijk gemaakt
-                    door onze leden</h3>
+                <p class="fw-bold" style=" margin: 0;">Mede mogelijk gemaakt
+                    door onze leden</p>
 
                 <!-- Image Section -->
                 <img src="./assets/lees_voor.svg" alt="Volume Icon" class="volume-icon mb-sm-5">
