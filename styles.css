@@ -7,8 +7,16 @@ body {
     transition: font-size 0.3s ease;
 }
 
+h1,
+p,
+span,div {
+    font-size: inherit;
+}
+
 .fs-18 {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.25rem;
 }
 
 /* @media (max-width: 768px) {
@@ -130,7 +138,7 @@ body {
     font-weight: 500;
     border-radius: 0;
     margin: 0%;
-    height: 3.5rem;
+    min-height: 3.5rem;
     width: 10rem;
 
 
@@ -170,7 +178,7 @@ body {
     color: white;
     padding: 1.25rem;
     padding-top: 1.875rem;
-    padding-bottom: 15px;
+    padding-bottom: 0.938rem;
     /* border-radius: 0.625rem; */
     position: relative;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -215,14 +223,19 @@ body {
 }
 
 .custom-card .arrow {
-    /* position: absolute;
-            bottom: 0.625rem;
-            right: 1.25rem; */
+    position: absolute;
+    bottom: 0.625rem;
+    right: 2.5rem;
     font-size: 1.125rem;
     color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.arrow:hover{
+    right: 1.5rem;
+    transition: 0.3s ease-out;
 }
 
 .custom-card .arrow:hover {
@@ -454,7 +467,8 @@ body {
     .members-section {
         padding: 2.5rem 1.25rem;
     }
-    .carousel-indicators{
+
+    .carousel-indicators {
         bottom: 15rem;
     }
 
@@ -464,20 +478,25 @@ body {
     .px-375 {
         padding-inline: 1.25rem;
     }
-    .carousel-indicators{
-        bottom: 4rem;
+
+    .carousel-indicators {
+        bottom: 3.57rem;
     }
-    .cards-listing{
+
+    .cards-listing {
         transform: translateY(-50px);
     }
-    .carousel-caption{
+
+    .carousel-caption {
         padding-bottom: 0;
     }
-    .cards-lees-voor{
+
+    .cards-lees-voor {
         /* transform: translateY(20px); */
         z-index: 10;
         position: absolute;
     }
+
     .carousel-caption h1 {
         font-size: 2rem;
     }
@@ -578,6 +597,75 @@ body {
 }
 
 
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
 }
+
+.active-font{
+    text-decoration: underline;
+}
+
+.font-size-150{
+    font-size: 1.5rem;
+}
+.font-size-100{
+    font-size: 1rem;
+}
+.font-size-200{
+    font-size: 2rem;
+}
+
+
+
+
+/* mega menu styles   */
+
+.mega-menu .dropdown-menu {
+    width: 100%;
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    border: none;
+    margin: 0
+}
+
+.mega-menu .dropdown-menu .row {
+    margin: 0;
+}
+
+.mega-menu .dropdown-menu h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.mega-menu .dropdown-menu .list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mega-menu .dropdown-menu .dropdown-item {
+    padding: 0.438rem 0rem;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.mega-menu .dropdown-menu .dropdown-item:hover {
+    color: #004684;
+}
+
+.mega-menu-about {
+    border-right: 1px solid #AEAEAE;
+    padding-bottom: 3.875rem;
+}
+
+@media screen and (max-width:768px) {
+    .mega-menu-about {
+        border-right: none;
+        border-bottom:1px solid #AEAEAE;
+    }
+}
+
+/* mega menu styles end here  */
