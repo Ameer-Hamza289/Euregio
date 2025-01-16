@@ -51,10 +51,17 @@ div {
     width: 21rem;
 }
 
+.news-title{
+    width: 75%;
+}
+
 @media (max-width: 768px) {
     .navbar-logo {
         max-height: 5rem;
         width: 10rem;
+    }
+    .news-title{
+        width: 100%;
     }
 }
 
