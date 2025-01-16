@@ -9,7 +9,8 @@ body {
 
 h1,
 p,
-span,div {
+span,
+div {
     font-size: inherit;
 }
 
@@ -233,9 +234,17 @@ span,div {
     align-items: center;
 }
 
-.arrow:hover{
+.arrow {
     right: 2rem;
-    transition: 0.3s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    transform: translateX(10px);
+}
+
+.read-more:hover .arrow {
+    transform: translateX(10px);
 }
 
 .custom-card .arrow:hover {
@@ -303,7 +312,7 @@ span,div {
 
 }
 
-@media (min-width:1280px) and  (max-width: 1645px) {
+@media (min-width:1280px) and (max-width: 1645px) {
     .logo-wrapper {
         justify-content: center;
     }
@@ -607,17 +616,19 @@ span,div {
     cursor: pointer;
 }
 
-.active-font{
+.active-font {
     text-decoration: underline;
 }
 
-.font-size-150{
+.font-size-150 {
     font-size: 1.5rem;
 }
-.font-size-100{
+
+.font-size-100 {
     font-size: 1rem;
 }
-.font-size-200{
+
+.font-size-200 {
     font-size: 2rem;
 }
 
@@ -670,7 +681,7 @@ span,div {
 @media screen and (max-width:768px) {
     .mega-menu-about {
         border-right: none;
-        border-bottom:1px solid #AEAEAE;
+        border-bottom: 1px solid #AEAEAE;
     }
 }
 
