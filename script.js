@@ -32,6 +32,7 @@ $(document).ready(function () {
     $('.font-size-200').click(function () {
         $('.font-size-100, .font-size-150, .font-size-200').removeClass('active-font'); 
         $('html').css('font-size', '32px');
+        $('.carousel-indicators').css('display','none');
         $('.px-375').css('padding-inline', '20px');
         $('.view-all-events').css('margin-top','3rem');
         $('.view-all-news').css('margin-top','3rem');
